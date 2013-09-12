@@ -1,4 +1,6 @@
 from Movie import Movie
 
-movie = Movie("toy story 3")
-movie.printInfo()
+movie = Movie("my neighbor totoro")
+
+if movie.loadSuccess:
+   movie.printInfo()

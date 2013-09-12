@@ -4,9 +4,14 @@ class Movie():
    
    def __init__(self, pTitle):
       self.className = "Movie"
-      self.data = RT().search(pTitle, page_limit=1)[0]
-      
-      self.setData()
+      data = RT().search(pTitle, page_limit=1)
+      if len(data) > 0:
+         self.loadSuccess = True;
+         self.data = data[0]
+         self.setData()
+      else:
+         print "Error,", pTitle, "not found"
+         self.loadSuccess = False;
          
    def setData(self):
       self.id = self.data['id']
@@ -14,8 +19,14 @@ class Movie():
       self.year = self.data['year']
       self.rating = self.data['mpaa_rating']
       self.runtime = self.data['runtime']
-      self.criticScore = self.data['ratings']['critics_score']
-      self.fresh = self.data['ratings']['critics_rating'] == 'Certified Fresh'
+      try:
+         self.criticScore = self.data['ratings']['critics_score']
+      except KeyError: 
+         self.criticScore = -1
+      try:
+         self.fresh = self.data['ratings']['critics_rating'] == 'Certified Fresh'
+      except KeyError:
+         self.fresh = -1
       self.synopsis = self.data['synopsis']
       self.cover = self.data['posters']['detailed']
          
