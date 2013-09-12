@@ -1,0 +1,7 @@
+
+.component.captivate iframe.captivateContainer 
+{
+    width: 850px;
+    height: 550px;
+	visibility: hidden;
+}

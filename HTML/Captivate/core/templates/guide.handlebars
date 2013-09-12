@@ -1,0 +1,23 @@
+{{#if graphic}}
+    <div class="graphic">
+        <img src="{{graphic.src}}" alt="{{graphic.alt}}" title="{{graphic.title}}"/>
+    </div>
+    {{else}}
+        {{#if icon}}
+        <div class="icon {{icon}}">
+        </div>
+        {{else}}
+        <div class="spacer">
+        </div>
+        {{/if}}
+    {{/if}}
+    <div class="title">
+        <h6 class="inner">
+            {{title}}
+        </h6>
+    </div>
+    <div class="body">
+        <p class="inner">
+            {{{body}}}
+        </p>
+    </div>

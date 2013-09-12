@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Last.fm Data</title>
+        <link href="css/default.css" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Donegal+One' rel='stylesheet' type='text/css' />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+		<script src="js/LastfmData.js" type="text/javascript"></script>
+		<script src="js/LastfmTrack.js" type="text/javascript"></script>
+		<script src="js/LastfmImage.js" type="text/javascript"></script>
+		<script src="js/utils.js" type="text/javascript"></script>
+		<script type="text/javascript">			
+
+			$(document).ready(function () 
+			{
+				// hide all divs to begin with			
+				document.getElementById("content").style.display = "none";
+				document.getElementById("lastfm").style.display = "none";
+				document.getElementById("currenttrack").style.display = "none";
+							
+				var currentTrack = new LastfmData('stratocastom', document.getElementById("currenttrack"));
+				$(currentTrack).bind('onDataReady', onDataLoaded);
+				currentTrack.getCurrentTrack();
+				
+				var recentTracks = new LastfmData('stratocastom', document.getElementById("recenttracks"));
+				$(recentTracks).bind('onDataReady', onDataLoaded);
+				recentTracks.getRecentTracks(10);
+				
+				var weeklyTracks = new LastfmData('stratocastom', document.getElementById("weeklytracks"));
+				$(weeklyTracks).bind('onDataReady', onDataLoaded);
+				weeklyTracks.getWeeklyTrackChart(15);
+				
+				var weeklyArtists = new LastfmData('stratocastom', document.getElementById("weeklyartists"));
+				$(weeklyArtists).bind('onDataReady', onDataLoaded);
+				weeklyArtists.getWeeklyArtistChart(10);
+						
+				var topArtists = new LastfmData('stratocastom', document.getElementById("topartists"));
+				$(topArtists).bind('onDataReady', onDataLoaded);
+				topArtists.getTopArtists(15);
+						
+				function onDataLoaded()
+				{ 
+					$('#content').fadeIn(500);
+				
+					if(checkDataReady()) $('#lastfm').slideDown(1500);
+					if(currentTrack.ready) $("#currenttrack").fadeIn(500);
+				};
+				
+				function checkDataReady()
+				{ 
+					return recentTracks.ready && weeklyTracks.ready && weeklyArtists.ready && topArtists.ready;
+				};
+			});
+		</script>
+    </head>
+	<body>
+		<div id="header">
+			<h1>Last.fm Data Test</h1>				
+		</div>
+		<div id="content">
+			
+			<div id="currenttrack">
+				<b>Currently listening to:</b>				
+			</div>
+
+			<div id="lastfm">
+
+				<div class="leftColumn">
+
+					<div id="recenttracks">
+						<h4>Recently Played Tracks:</h4>				
+					</div>
+					
+					<div id="weeklytracks">
+						<h4>Top Tracks This Week:</h4>
+					</div>
+
+				</div>
+				
+				<div class="rightColumn">
+				    
+				    <div id="weeklyartists">
+						<h4>Top Artists This Week:</h4>
+					</div>
+				    
+				    <div id="topartists">
+						<h4>Top Artists Overall:</h4>
+					</div>
+				    
+				</div>
+				
+			</div>
+		</div>
+		<div id="footer">
+			<p>Thomas Taylor 2012.</p>
+		</div>
+	</body>
+</html>

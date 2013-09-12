@@ -1,0 +1,131 @@
+<!doctype html>
+
+    <!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+    <!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+    <!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+    <!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+    <!-- the "no-js" class is for Modernizr. -->
+    
+
+
+
+<head id="adapt">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+     
+    <title></title>
+        
+    <meta name="author" content="Daryl Hedley, Fabien O'Carroll & Paul Welch">
+    <meta name="Copyright" content="Copyright Kineo 2013. All Rights Reserved.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        
+    <link rel="apple-touch-icon" href="_/img/apple-touch-icon.png">
+    <link href="core/base.css" type="text/css" rel="stylesheet"/>
+    <link href="core/captivate.css" type="text/css" rel="stylesheet"/>
+    <link href="theme/icons.css" type="text/css" rel="stylesheet"/>
+    <link href="theme/theme.css" type="text/css" rel="stylesheet"/>
+    <link href="theme/accessible.css" type="text/css" rel="stylesheet"/>
+    <link href="menu/menu.css" type="text/css" rel="stylesheet"/>
+    <!--<link href="patch/css/patch-style.css" type="text/css" rel="stylesheet"/>-->
+    
+    <script src="core/js/libraries/json2.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/libraries/jquery.min.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/libraries/scrollTo.min.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/libraries/inview.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/libraries/mediaqueries.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/libraries/easing.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/libraries/imageready.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/libraries/modernizr-1.7.min.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/libraries/underscore-1.4.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/libraries/handlebars-1.0.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/libraries/backbone-1.0.0.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/libraries/swfobject.js" type="text/javascript" language="javascript"></script>
+    <script type="text/javascript" language="javascript">
+        var Adapt = _.extend({}, Backbone.Events);
+    </script>
+    <script src="spoor/SCORM_API_wrapper.js" type="text/javascript" language="javascript"></script>
+    <script src="spoor/logger.js" type="text/javascript" language="javascript"></script>
+    <script src="spoor/scormWrapper.js" type="text/javascript" language="javascript"></script>
+    <script src="spoor/spoor.js" type="text/javascript" language="javascript"></script>
+    <script src="core/templates/templates.js" type="text/javascript" language="javascript"></script>
+
+    <script src="core/js/router.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/models.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/collections.js" type="text/javascript" language="javascript"></script>
+    
+
+    <script src="menu/templates.js" type="text/javascript" language="javascript"></script>
+    <script src="menu/menu.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/content.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/blockShifter.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/component.js" type="text/javascript" language="javascript"></script>
+    <script src="triggered/component.js"></script>
+    <script src="triggered/close.js"></script>
+    <script src="triggered/templates.js"></script>
+    <script src="core/js/views/captivate.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/question.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/audio.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/slider.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/accordion.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/textInput.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/page.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/article.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/nav.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/manager.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/block.js" type="text/javascript" language="javascript"></script>
+    <script src="triggered/block.js"></script>
+    <script src="core/js/views/guide.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/graphic.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/hotGraphic.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/matching.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/mcq.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/gmcq.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/media.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/narrative.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/ordering.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/ppq.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/confidence.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/reveal.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/text.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/blank.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/tutor.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/messages.js" type="text/javascript" language="javascript"></script>
+    <script src="core/js/views/tools.js" type="text/javascript" language="javascript"></script>    
+    <!--<script src="stitch/stitch.js" type="text/javascript" language="javascript"></script>-->
+    <link href="triggered/triggered.css" type="text/css" rel="stylesheet"/>
+    <script src="core/js/app.js" type="text/javascript" language="javascript"></script>
+    
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="navigation">
+        </div>
+        <div id="tools">
+        </div>
+        <div id="menu" class="clearfix">
+        </div>
+        <div id="page">
+        </div>
+        <div class="block-shifter">
+        </div>
+        <div id="tutor">
+        </div>
+        <div id="inbox">
+        </div>
+        <div id="fullscreen" class="clearfix">
+        </div>
+        <div id="shadow" class="clearfix">
+        </div>
+        <div id="guide"></div>
+        <div id="patch"></div>
+        <div id="patch-menu"></div>
+        <div class="loading"></div>
+        
+    </div>
+</body>
+</html>

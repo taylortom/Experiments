@@ -1,0 +1,505 @@
+.accessibility body {
+    background-color:#ffffff;
+}
+
+.accessibility #navigation {
+    background-color:#000000;
+    border-bottom: 1px solid #ffffff;
+}
+
+.accessibility #settings {
+    background-color:#000000;
+}
+
+.accessibility #settings .inner a:hover
+, .accessibility #settings .inner a:focus {
+   color: #000000;
+   background-color: #ffffff;
+}
+.accessibility #wrapper {
+    background-color:#000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.accessibility #menu {
+    background-color: #ffffff;
+}
+.accessibility #menu .item a.inner {
+    border: 1px solid #000000;
+}
+.accessibility #menu .item a.inner:hover,
+.accessibility #menu .item a.inner:focus {
+    background-color: #000000;
+    color: #ffffff;
+}
+.accessibility #menu .item .inner .title {
+    color: #000000;
+    background-color: #ffffff;
+}
+.accessibility #menu .item .inner:hover .title,
+.accessibility #menu .item .inner:focus .title,
+.accessibility #menu .item .inner:hover p,
+.accessibility #menu .item .inner:focus p
+{
+    color: #ffffff;
+    background-color: #000000;
+}
+.accessibility #menu .status {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-top: none;
+}
+.accessibility .article {
+    background-color:#ffffff;
+}
+
+.accessibility .component {
+    background-color: #ffffff;
+}
+
+.accessibility body, 
+.accessibility p {
+    color: #000000;
+}
+
+.accessibility a, 
+.accessibility a:visited, 
+.accessibility .component.narrative .strapline .controls .icon, 
+.accessibility .component.mcq .widget .item label {
+    color: #ffffff;
+}
+.accessibility a.icon {
+    background-color:#000000;
+    color: #ffffff;
+}
+
+.accessibility a.icon:hover,
+.accessibility a.icon:focus {
+    background-color:#ffffff;
+    color: #000000;
+}
+
+.accessibility.no-touch a:hover, 
+.accessibility.no-touch .component.accordion .item .title:hover, 
+.accessibility.no-touch a:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.accessibility h1 {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.accessibility h2 {
+    color: #000000;
+}
+
+.accessibility h3 {
+    color: #000000;
+}
+
+.accessibility h4 {
+    color: #000000;
+}
+
+.accessibility .component.narrative .slide .controls {
+    background-color:#000000;
+}
+
+.accessibility .component.narrative .slide .controls .icon {
+    color:#ffffff;
+}
+
+.accessibility.no-touch .component.narrative .slide .controls .icon:hover,
+.accessibility.no-touch .component.narrative .slide .controls:focus .icon {
+    color:#000000;
+    background-color: #ffffff;
+}
+
+.accessibility .component.narrative .strapline .controls .icon {
+    color:#ffffff;
+}
+
+.accessibility.no-touch .component.narrative .strapline .controls .icon:hover {
+    color:#000000;
+}
+
+.accessibility .component.narrative .strapline {
+    background-color:#000000;
+    color:#ffffff;
+}
+
+.accessibility .component.narrative .strapline {
+    background-color:#000000;
+    color:#ffffff;
+}
+
+.accessibility .component.narrative .popup > .inner {
+    background-color:#ffffff;
+}
+
+.accessibility .component.narrative .popup > .inner .content p {
+    color:#000000;
+}
+
+.accessibility .component.narrative .popup > .inner .toolbar .title h5 {
+    color:#000000;
+}
+
+.accessibility .component.narrative .popup .close {
+    color:#000000;
+    background-color: #ffffff;
+}
+
+.accessibility.no-touch .component.narrative .popup .close:hover {
+    background-color:#000000;
+    color: #ffffff;
+}
+
+.accessibility .component.hotgraphic .widget .graphic .item {
+    color:#ffffff;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+}
+
+.accessibility.no-touch .component.hotgraphic .widget .graphic .item:hover,
+.accessibility.no-touch .component.hotgraphic .widget .graphic .item:focus {
+    color:#000000;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+.accessibility .component.hotgraphic.desktop .popup {
+    background-color:#ffffff;
+    border-color:#ffffff;
+}
+
+.accessibility .component.hotgraphic.desktop .popup .toolbar {
+    background-color:#000000;
+}
+
+.accessibility .component.hotgraphic .toolbar .controls, 
+.accessibility .component.hotgraphic .toolbar .done {
+    color:#ffffff;
+}
+
+.accessibility.no-touch .component.hotgraphic .toolbar .controls:hover, 
+.accessibility.no-touch .component.hotgraphic .toolbar .done:hover,
+.accessibility.no-touch .component.hotgraphic .toolbar .controls:focus, 
+.accessibility.no-touch .component.hotgraphic .toolbar .done:focus {    
+    color:#000000;    
+}
+
+.accessibility .component.hotgraphic.desktop .popup .toolbar .count {    
+    color:#ffffff;    
+}
+
+.accessibility .component.hotgraphic .popup h5, 
+.accessibility .component.hotgraphic .popup p {    
+    color:#000000;    
+}
+
+.accessibility .component.accordion .title h4 {        
+    color:#ffffff;    
+}
+
+.accessibility .component.accordion .widget .item .title {    
+    color:#ffffff;    
+    background-color:#000000;
+}
+
+.accessibility.no-touch .component.accordion .widget .item .title:hover, 
+.accessibility.no-touch .component.accordion .widget .item .title:focus {    
+    background-color:#ffffff;    
+    color: #000000;
+}
+
+.accessibility .component.accordion .widget .item .title.visited, 
+.accessibility.no-touch .component.accordion .widget .item .title.visited:hover,
+.accessibility.no-touch .component.accordion .widget .item .title.visited:focus {
+    color:#ffffff;    
+    background-color:#999999;
+    
+}
+.accessibility .component.accordion .widget .item .title .inner {    
+    color:#ffffff;    
+}
+
+.accessibility.no-touch .component.accordion .widget .item .title:hover .inner,
+.accessibility.no-touch .component.accordion .widget .item .title:focus .inner {    
+    color:#000000;    
+}
+
+.accessibility .component.accordion .widget .item .title.visited .inner,
+.accessibility.no-touch .component.accordion .widget .item .title.visited:hover .inner,
+.accessibility.no-touch .component.accordion .widget .item .title.visited:focus .inner {    
+    color:#ffffff;    
+}
+
+.accessibility .component.accordion .widget .item .body { 
+    background-color:#ffffff;    
+}
+
+.accessibility .component.accordion .item {
+    border-color:#000000;
+}
+
+.accessibility .component.mcq .widget .item label {    
+    color:#ffffff;        
+    background-color:#000000;   
+    border: 1px solid #000000;
+}
+
+
+.accessibility .component.mcq .widget .item label.selected {    
+    color:#ffffff;        
+    background-color:#999999;    
+}
+
+.accessibility .component.mcq .widget .item label h5 {    
+    color:#ffffff;    
+}
+
+.accessibility.no-touch .component.mcq .widget .item label h5:hover, 
+.accessibility .component.mcq .widget .item label:hover,
+.accessibility .component.mcq .widget .item label.highlighted, 
+.accessibility .component.mcq .widget .item label.highlighted h5 {    
+    color:#000000; 
+    background-color:#ffffff;    
+}
+
+.accessibility.no-touch .component.mcq .widget.complete .item label h5:hover  {    
+    color:#ffffff;    
+}
+
+.accessibility .component.mcq .widget .item label.selected h5, 
+.accessibility.no-touch .component.mcq .widget .item label.selected h5:hover{    
+    color:#000000;    
+}
+
+.accessibility.no-touch .component.mcq .widget.complete .item label:hover {    
+    background-color:#000000;        
+    color:#ffffff;    
+}
+
+.accessibility .component.mcq .widget.complete .item label.selected, 
+.accessibility.no-touch .component.mcq .widget.complete .item label.selected:hover{    
+    background-color:#ffffff;   
+}
+
+.accessibility .component.mcq .widget.complete.model .item label.selected, 
+.accessibility.no-touch .component.mcq .widget.complete.model .item label.selected:hover{    
+    background-color:#000000;    
+}
+.accessibility .component.mcq .widget.complete.model .item.correct label{    
+    background-color:#ffffff;    
+}
+
+.accessibility .component.mcq .widget.complete.model .item.correct label h5, 
+.accessibility.no-touch .component.mcq .widget.complete.model .item.correct label h5:hover {    
+    color:#000000;     
+}
+
+.accessibility .component.mcq .widget.complete.model .item.incorrect label h5 {    
+    color:#ffffff;    
+}
+
+.accessibility.no-touch .component.mcq .widget.complete.model .item label:hover, 
+.accessibility.no-touch .component.mcq .widget.complete.model .item label h5:hover,
+.accessibility.no-touch .component.mcq .widget.complete.model .item label.highlighted, 
+.accessibility.no-touch .component.mcq .widget.complete.model .item label.highlighted h5, 
+.accessibility.no-touch .component.mcq .widget.complete.model .item label.selected:hover, 
+.accessibility.no-touch .component.mcq .widget.complete.model .item label.selected:hover h5,
+.accessibility.no-touch .component.mcq .widget.complete.mine .item label:hover, 
+.accessibility.no-touch .component.mcq .widget.complete.mine .item label h5:hover,
+.accessibility.no-touch .component.mcq .widget.complete.mine .item label.highlighted, 
+.accessibility.no-touch .component.mcq .widget.complete.mine .item label.highlighted h5, 
+.accessibility.no-touch .component.mcq .widget.complete.mine .item label.selected:hover, 
+.accessibility.no-touch .component.mcq .widget.complete.mine .item label.selected:hover h5, 
+.accessibility.no-touch .component.mcq .widget.complete.model .item.correct label:hover 
+ {    
+    color:#ffffff;    
+    background-color: #999999;
+}
+
+.accessibility .component.mcq .widget.complete .item.correct .selected .state {    
+    color:#5abd5e;    
+}
+
+.accessibility .component.mcq .widget.complete .item.incorrect .selected .state {    
+    color:#db214f;    
+}
+
+.accessibility .component.mcq .widget.complete.model .item.correct .state {    
+    color:#5abd5e;    
+}
+
+.accessibility .component.mcq .widget.complete.model .item.incorrect .state {    
+    color:#db214f;    
+}
+
+.accessibility .component.mcq .button.submit, 
+.accessibility .component.mcq .button.reset, 
+.accessibility .component.mcq .button.mine, 
+.accessibility .component.mcq .button.model {    
+    background-color:#000000;        
+    color:#ffffff;    
+    border:1px solid #000000;
+}
+
+.accessibility.no-touch .component.mcq .button.submit:hover, 
+.accessibility.no-touch .component.mcq .button.reset:hover, 
+.accessibility.no-touch .component.mcq .button.mine:hover, 
+.accessibility.no-touch .component.mcq .button.model:hover,
+.accessibility.no-touch .component.mcq .button.submit:focus, 
+.accessibility.no-touch .component.mcq .button.reset:focus, 
+.accessibility.no-touch .component.mcq .button.mine:focus, 
+.accessibility.no-touch .component.mcq .button.model:focus {   
+    background-color:#ffffff;        
+    color:#000000;    
+    border:1px solid #000000;
+}
+
+.accessibility .component.ppq .pinboard .marker {    
+    color:#ffffff;    
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+
+.accessibility.no-touch .component.ppq .pinboard .marker:hover {    
+    color:#000000;    
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+.accessibility .component.ppq .button.submit, 
+.accessibility .component.ppq .button.reset, 
+.accessibility .component.ppq .button.mine, 
+.accessibility .component.ppq .button.model {    
+    background-color:#000000;        
+    color:#ffffff;    
+    border: 1px solid #000000;
+}
+
+.accessibility.no-touch .component.ppq .button.submit:hover, 
+.accessibility.no-touch .component.ppq .button.reset:hover, 
+.accessibility.no-touch .component.ppq .button.mine:hover, 
+.accessibility.no-touch .component.ppq .button.model:hover,
+.accessibility.no-touch .component.ppq .button.submit:focus, 
+.accessibility.no-touch .component.ppq .button.reset:focus, 
+.accessibility.no-touch .component.ppq .button.mine:focus, 
+.accessibility.no-touch .component.ppq .button.model:focus {    
+    background-color:#ffffff;        
+    color:#000000;    
+    border: 1px solid #000000;
+}
+
+.accessibility .component.ppq .widget.mine .marker.icon.correct {    
+    color:#2ade78;    
+}
+
+.accessibility .component.ppq .widget.mine .marker.icon {    
+    color:#d63232;   
+}
+
+.accessibility #guide  {        
+    border-radius: 0px;    
+}
+
+.accessibility #guide .item .title h6 {        
+    color:#000000;    
+}
+
+.accessibility #guide .item .body p {        
+    color:#000000;    
+}
+
+.accessibility #guide .left, 
+.accessibility #guide .right, 
+.accessibility #guide .done {    
+    color:#000000;    
+}
+
+.accessibility.no-touch #guide .left:hover, 
+.accessibility.no-touch #guide .right:hover, 
+.accessibility.no-touch #guide .done:hover,
+.accessibility.no-touch #guide .left:focus, 
+.accessibility.no-touch #guide .right:focus, 
+.accessibility.no-touch #guide .done:focus {    
+    color:#ffffff;    
+    background-color: #000000;
+}
+
+.accessibility #guide  {    
+    border: 1px solid #000000;
+}
+
+.accessibility #guide .footer {    
+    background-color:#ffffff;  
+    border-top: 1px solid #000000;
+}
+
+.accessibility #guide .footer .indicators .progress {
+    background-color:#ffffff;
+}
+
+.accessibility #guide .footer .indicators .progress.selected {
+    background-color:#000000;
+}
+
+.accessibility #guide .toggle {
+    background-color:#000000;
+    color:#ffffff;
+}
+    
+.accessibility.no-touch #guide .toggle:hover {
+    background-color:#666666;
+    color:#ffffff;
+}
+
+.accessibility #tutor {
+    background-color:#ffffff;
+    border-bottom: 1px solid #000000;
+}
+
+.accessibility #tutor .pin {
+    border-bottom-color:#ffffff;
+}
+
+.accessibility #tutor .inner .title h6 {
+    color:#000000;
+}
+
+.accessibility #tutor .inner .body p {
+    color:#000000;    
+}
+
+.accessibility #tutor .done {    
+    color:#000000;    
+}
+
+.accessibility.no-touch #tutor .done:hover, 
+.accessibility.no-touch #tutor .done:focus {    
+    background-color:#000000;    
+    color: #ffffff;
+}
+
+.accessibility .component.reveal .handle {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    
+}
+.accessibility .component.reveal .handle:hover,  
+.accessibility .component.reveal .handle:focus {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.accessibility .component.media .transcript {
+    display: block;
+}

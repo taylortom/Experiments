@@ -1,0 +1,2434 @@
+/*//////////////////////////////////////////////////////////////////////////////////
+
+									HTML RESET
+
+//////////////////////////////////////////////////////////////////////////////////*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, 
+kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, 
+li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, 
+tr, th, td, article, aside, figure, footer, header, hgroup, menu, 
+nav, section, time, mark, audio, video {margin: 0; padding: 0; border: 0; 
+outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}									
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+img, object, embed {max-width: 100%;}
+html {overflow-y: scroll;}
+ul li {margin-left:20px;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, 
+q:after {content: ''; content: none;}
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+del {text-decoration: line-through;}
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+input, select {vertical-align: middle;}
+pre {white-space: pre; white-space: pre-wrap; white-space: pre-line; word-wrap: break-word;}
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+select, input, textarea {font: 99% sans-serif;}
+table {font-size: inherit; font: 100%;}
+a:hover, a:active {outline: none;}
+small {font-size: 85%;}
+strong, th {font-weight: bold;}
+td, td img {vertical-align: top;} 
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+.clickable, label, input[type=button], input[type=submit], button {cursor: pointer;}
+button, input, select, textarea {margin: 0;}
+button {width: auto; overflow: visible;}
+.ie7 img {-ms-interpolation-mode: bicubic;}
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+/*Selection styling 
+::-moz-selection{background: rgb(28,201,240); color: #fff; text-shadow: none;}
+::selection {background: rgb(28,201,240); color: #fff; text-shadow: none;} 
+a:link {-webkit-tap-highlight-color: rgb(28,201,240);}
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+*/
+
+/*//////////////////////////////////////////////////////////////////////////////////
+
+									ADAPT STYLING
+
+//////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////
+	COLORS
+///////////////////////*/
+
+/* 
+    dark grey #454545
+    light grey #b9b9b9
+    almost white #fbfbfb
+    white #fff
+*/
+
+/*///////////////////////
+	FONT SETUP
+///////////////////////*/
+
+body, p, select, input, textarea {
+font-size:13px;
+font-family: 'Arial', sans-serif;
+color: #000;
+font-weight:normal;
+}
+
+h1 {
+font-size:21px;
+font-weight:bold;
+}
+
+h2 {
+font-size:19px;
+font-weight:bold;
+}
+
+h3 {
+font-size:17px;
+font-weight:bold;
+}
+
+h4 {
+font-size:15px;
+font-weight:bold;
+}
+
+a {
+text-decoration:none;
+color:#000;
+font-weight:normal;
+}
+
+a:visited {
+color:#000;
+}
+
+.no-touch a:hover {
+color:#ccc;
+}
+
+/*///////////////////////
+	BUTTON SETUP
+///////////////////////*/
+
+.button {
+    display: inline-block;
+    padding: 6px 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #000;
+}
+
+.no-touch .button:hover {
+    border:1px solid #b9b9b9;
+}
+
+/*///////////////////////
+    LOADING SETUP
+///////////////////////*/
+
+.loading {
+    background-image:url('../theme/ajax-loader.gif');
+    background-repeat:no-repeat;
+    width:31px;
+    height:31px;
+    position:fixed;
+    top:50%;
+    margin-top:-15px;
+    left:50%;
+    margin-left:-15px;
+    display:none;
+}
+
+/*///////////////////////
+    BLOCK SHIFTER
+///////////////////////*/
+
+.block-shifter .inner {
+    padding:0px 10px 10px;
+}
+
+.block-shifter .button {
+    position:relative;
+}
+
+.block-shifter .back {
+    padding-left:20px;
+}
+
+.block-shifter .next {
+    padding-right:20px;
+}
+
+.block-shifter .back .icon {
+    position:absolute;
+    top:2px;
+    left:0px;
+}
+
+.block-shifter .next .icon {
+    position:absolute;
+    top:2px;
+    right:0px;
+}
+
+/*///////////////////////
+	FULL SCREEN MODE
+///////////////////////*/
+
+#fullscreen {
+    display:none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230,230,230,0.8);
+    z-index: 400;
+}
+
+#fullscreen .content{
+    position: absolute;
+    top: 50%;
+    margin-top: -25%;
+}
+
+#fullscreen .toolbar{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+/*///////////////////////
+	TUTOR
+///////////////////////*/
+
+#tutor {
+    display:none;
+    position:fixed;
+    z-index:400;
+    top:41px;
+    width:100%;
+    background-color:#454545;
+    color:#fff;
+}
+
+#tutor > .done {
+    position:absolute;
+    top:10px;
+    right:10px;
+    color:#fff;
+}
+#tutor .feedback {
+    position:absolute;
+    top:10px;
+    left:10px;
+    color:#b9b9b9;
+}
+#tutor a.messages {
+    position:absolute;
+    top:10px;
+    left:44px;
+    color:#b9b9b9;
+}
+.no-touch #tutor .done:hover {
+    color:#b9b9b9;
+}
+.no-touch #tutor .messages:hover, .no-touch #tutor .feedback:hover, #tutor .feedback.selected, #tutor .messages.selected  {
+    color:#fff;   
+}
+#tutor > .inner {
+    padding:20px;
+}
+
+#tutor p {
+    color:#fff;
+}
+
+#tutor .pin {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #454545;
+    position: relative;
+    top: -8px;
+    margin: 0 auto;
+}
+/*/////////////////////
+//  List
+/////////*/
+
+#tutor .topbar .title {
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+#tutor > .list .item{
+    padding: 10px 20px;
+    border-bottom: 1px rgb(204, 204, 204) solid;
+}
+
+#tutor > .list .item .title {
+    cursor:pointer;
+}
+
+#tutor > .list .item .body {
+    display:none;
+}
+#tutor > .list .item:first-child .body {
+    display:block;
+}
+/*///////////////////////
+	BASS STYLING
+///////////////////////*/
+
+#wrapper {
+	width:100%;
+	position:relative;
+    background-color:#e9e9e9;
+}
+
+body {    
+    background-color:#f9f9f9;
+}
+
+/*////////////////////////
+    LOADER STYLING
+////////////////////////*/
+
+.loader {
+    display:none!important;
+    position:fixed;
+    top:50%;
+    margin-top:-23px;
+    left:50%;
+    margin-left:-100px;
+    width:200px;
+    height:46px;
+    z-index:500;
+    text-align:center;
+}
+
+/*///////////////////////
+	NAVIGATION
+///////////////////////*/
+
+#navigation {
+    position:fixed;
+	top: 0px;
+    left: 0px;
+	width:100%;
+	height:40px;
+    background-color:#fff;
+	border-bottom: solid 1px #b9b9b9;
+	overflow:hidden;
+	z-index:300;
+}
+
+#navigation > .inner {
+	
+}
+
+#navigation > .inner .tools {
+    display:block;
+    float:left;
+    margin: 8px;
+}
+
+#navigation .tutor {
+    display: block;
+    position: absolute;
+    margin-right: 15px;
+    left: 50%;
+    margin-left: -12px;
+    margin-top:8px;
+    display:none;
+}
+
+#navigation .menu {
+    display:block;
+    float:right;
+    margin: 8px;
+}
+
+/*///////////////////////
+	TOOLS
+///////////////////////*/
+
+#tools {
+    display:none;
+    position: fixed;
+    top:-200px;
+    background-color: #454545;
+    color: #fff;
+    width: 320px;
+    z-index: 100;
+}
+
+#tools > .inner {
+    padding: 10px;
+}
+
+#tools > .inner .nav {
+    
+}
+
+#tools .search {
+    display:block;
+    float:left;
+    height: 24px;
+    margin-bottom:10px;    
+}
+
+#tools .search input[type="text"] {
+    float:left;
+    height:18px;
+    width: 260px;
+}
+
+#tools .search .icon.search {
+    float:left;
+    line-height:24px;
+    margin-left:8px;
+}
+
+#tools .tab {
+    width: 33.33337%;
+    float: left;
+    text-align: center;
+}
+
+#tools .resources.icon,
+#tools .settings.icon,
+#tools .guide.icon {
+    margin:5px auto;
+}
+
+
+/*///////////////////////////
+    MESSAGES STYLING
+///////////////////////////*/
+
+#inbox {
+    display:none;
+    background-color:#fff;
+    border-right:4px solid #454545;
+    position:fixed;
+    top:0px;
+    left:-300px;
+    z-index:410;
+    width:296px;
+    height:100%;
+}
+
+#inbox > .inner {
+    height:100%;
+}
+
+#inbox > .inner > .toolbar {
+    position:relative;
+    background-color:#454545;
+}
+
+#inbox > .inner > .toolbar .title {
+    padding:14px 10px;
+    color:#fff;
+}
+
+#inbox .toolbar .done {
+    position:absolute;
+    top:10px;
+    right:10px;
+    color:#fff;
+}
+
+.no-touch #inbox .toolbar .done:hover {
+    color:#e2e2e2;
+}
+
+#inbox .messages .divide {
+    background-color:#f2f2f2;
+}
+
+#inbox .messages .divide .inner {
+    padding:4px 10px;
+    border-bottom:1px solid #e2e2e2;
+}
+#inbox .messages {
+    height:100%;
+}
+#inbox .placeholder {
+    background-color:#fff;
+}
+
+#inbox .placeholder > .inner {
+    padding:10px;
+    border-bottom:1px solid #e2e2e2;
+}
+
+#inbox .message {
+    background-color:#fff;
+    position:relative;
+}
+
+#inbox .message > .inner {
+    padding:10px;
+    border-bottom:1px solid #e2e2e2;
+    cursor:pointer;
+}
+
+#inbox .pop-out {
+    width:600px;
+    position:absolute;
+    top:0px;
+    left:300px;
+    background-color:#454545;
+    color:#fff;
+    display:none;
+}
+
+#inbox .pop-out > .inner {
+    padding:10px;
+}
+
+#inbox .pop-out .body {
+    margin-top:10px;
+}
+
+#inbox .pop-out .body img {
+    margin-top:10px;
+}
+
+#inbox .pop-out .body video {
+    margin-top:10px;
+}
+
+#inbox .pop-out p {
+    color:#fff;
+}
+
+#inbox .pop-out .pin {
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 12px solid #454545;
+    position: absolute;
+    top: 17px;
+    left: -12px;
+}
+.icon.messages .unread {
+    font-size:13px;   
+}
+.icon.messages.unread {
+    color: rgb(222, 22, 22);
+}
+#inbox .pop-out-done {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;   
+}
+#inbox .options {
+    display:none;   
+}
+#inbox .open-message {
+    float:right;
+    margin-top:5px;
+}
+#inbox .pop-out video {
+    width:100%;   
+}
+#inbox .messages .message .preview.unread-message {
+    background-color: rgba(222, 2, 2, 0.1);   
+}
+#inbox .page-messages .placeholder {
+    display:none;   
+}
+#inbox .page-messages.empty .placeholder {
+    display:block;
+}
+
+/*///////////////////////////
+    GUIDE STYLING
+///////////////////////////*/
+
+#shadow {
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    z-index:280;
+    background-color:rgba(230,230,230,0.8);
+}
+
+#guide {
+    display:none;
+    background-color:#fff;
+    width:400px;
+    position:fixed;
+    top:80px;
+    left:50%;
+    margin-left:-200px;
+    height:300px;
+    text-align:center;
+    z-index:290;
+    border:1px solid #d2d2d2;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+#guide > .inner {
+    padding:30px 40px;
+    overflow:hidden;
+}
+
+#guide .left {
+    position:absolute;
+    left:0px;
+    top:50%;
+    margin-top:-12px;
+    z-index:10;
+}
+
+#guide .right {
+    position:absolute;
+    right:0px;
+    top:50%;
+    margin-top:-12px;
+    z-index:10;
+}
+
+#guide .done {
+    position:absolute;
+    right:10px;
+    top:10px;
+}
+
+#guide .item {
+    float:left;
+    width:100%;
+    display:none;
+}
+
+#guide .item .icon {
+    width:94px;
+    height:94px;
+    margin:0 auto;
+    font-size:80px;
+}
+
+#guide .item .spacer {
+    min-height:90px;
+}
+
+#guide .graphic {
+    min-height:90px;
+}
+
+#guide .item .title h6 {
+    font-size:21px;
+}
+
+#guide .item .body {
+    margin-top:10px;
+}
+
+#guide .toggle {
+    display:none;
+    padding: 10px;
+    border: solid 1px #c2c2c2;
+    border-radius: 3px;
+}
+
+#guide .footer {
+    background-color:#e2e2e2;
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    border-top: 1px solid #c2c2c2;
+}
+
+#guide .footer .indicators {
+    text-align:center;
+    padding:4px;
+}
+
+#guide .footer .indicators .progress {
+    display:inline-block;
+    width:8px;
+    height:8px;
+    border:1px solid #454545;
+    border-radius:50%;
+    background-color: #f2f2f2;
+}
+
+#guide .footer .indicators .progress.selected {
+    background-color: #454545;
+}
+
+/*///////////////////////
+	MENU
+///////////////////////*/
+
+#menu {
+    position:relative;
+    margin-top:40px;
+}
+
+#menu > .inner {
+    padding:10px;
+}
+
+#menu .item {
+    margin-bottom: 10px;
+    background-color:#fff;
+    overflow:hidden;
+}
+
+#menu .item .inner {
+    display:block;
+    padding:10px;
+}
+
+#menu .item .inner .title {
+    color:#4f4f4f;
+}
+
+#menu .status {
+    padding:4px 10px;
+    background-color:#fbfbfb;
+    border-top:solid 1px #b9b9b9;
+}
+/*////////////////////////
+    AUDIO
+///////////////////////*/
+.audio-controls {
+    float: left;
+    margin-top: -3px;
+}
+#tutor .audio-controls {
+    float: right;
+    margin-top: 10px;
+    margin-right: 38px;
+    margin-bottom: 10px;
+}
+.audio-controls a.icon{
+    color:#000;
+}
+.no-touch .audio-controls a.icon:hover{
+    color:#ccc;
+}
+#flashAudio {
+    display:none!important;
+}
+#flashAudio object {
+    display:none!important;
+    width:1px;
+    height:1px;
+}
+/*///////////////////////
+	PAGE
+///////////////////////*/
+
+#page {
+    position:relative;
+    overflow:hidden;
+    margin-top:41px;
+    border-top:1px solid #fbfbfb;
+}
+
+#page > .inner {
+    padding:10px;
+}
+
+
+/*///////////////////////
+	ARTICLES
+///////////////////////*/
+
+.article {
+    margin-top:10px;
+}
+
+.article > .inner {
+    
+}
+
+/*///////////////////////
+	BLOCKS
+///////////////////////*/
+
+.block {
+    margin-top: 10px; 
+    position:relative;
+    overflow:hidden;
+}
+
+.block > .instruct {
+    width: 0;
+    height: 0;
+    border-top: 40px solid #8fc344;
+    border-left: 40px solid transparent;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.block > .inner {
+    
+}
+
+.block > .inner > .title {
+
+}
+
+.block > .inner > .title .inner {
+    
+}
+
+/*///////////////////////
+	COMPONENTS
+///////////////////////*/
+
+.component {
+    margin-top:10px;
+}
+
+.component > .inner > .body {
+    margin-top:10px;
+}
+
+.component > .inner > .widget {
+    margin-top:10px;
+}
+
+/*///////////////////////
+	NARRATIVE
+///////////////////////*/
+
+.no-touch .component.narrative .slide {
+    overflow:hidden;
+}
+
+.component.narrative .widget {
+    width: 100%;
+}
+
+.component.narrative .slide {
+    width:100%;
+    position:relative;
+}
+
+.no-touch .component.narrative .graphic {
+    margin-right:0px;
+}
+
+.component.narrative .graphic {
+    position:relative;
+    float:left;
+    margin-right:5px;
+}
+
+.component.narrative.desktop .graphic {
+    margin-right:0px;
+}
+
+.component.narrative .graphic .controls {
+    width:40px;
+    height:40px;
+    position:absolute;
+    top:0px;
+    right:0px;
+    background-color:rgba(255,255,255,0.6);
+    text-align:center;
+    line-height:40px;
+    font-size:30px;
+    margin-top:0px;
+}
+
+.component.narrative.desktop .content {
+    width:36%;
+    float:left;
+}
+
+.component.narrative.desktop .slide {
+    width:60%;
+    float:left;
+    margin-right:3%;
+}
+
+.component.narrative.desktop .widget .content .item {
+    display:none;
+}
+
+.component.narrative .popup {
+    display: none;
+    z-index: 300;
+    width:100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color:rgba(30,30,30,1);
+    height:100%;
+}
+
+.component.narrative .popup > .inner {
+    position:relative;
+    padding: 10px;
+    background-color:#fff;
+    border: 1px solid #fbfbfb;
+    margin:10px;
+    
+}
+
+.component.narrative .popup > .inner .content {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.component.narrative .popup > .inner .content p {  
+}
+
+.component.narrative .popup h5 {
+    font-size:19px;
+    margin-bottom:10px;
+}
+
+.component.narrative .toolbar {
+    z-index: 400;
+    top:20px;
+    right:20px;
+}
+
+.component.narrative .toolbar .close {
+    display:inline-block;
+}
+
+.component.narrative .toolbar .title {
+    float:left;
+    width:80%;
+}
+
+.component.narrative .toolbar .close {
+    float:right;
+}
+
+.component.narrative .strapline {
+    position:relative;
+    height:48px;
+    background-color:#454545;
+    color:#fff;
+}
+
+.component.narrative .strapline .header {
+    position:absolute;
+    height:100%;
+    overflow:hidden;
+}
+
+.component.narrative .strapline .header .inner {
+}
+
+.component.narrative .strapline .header .title {
+    float:left;
+    line-height:48px;
+}
+
+.component.narrative .strapline .header .title .inner {
+    padding-left:20px;
+}
+
+.component.narrative .strapline .controls {
+    position:absolute;
+    right:0px;
+    display: block;
+    width: 48px;
+    height: 48px;
+}
+
+.component.narrative .strapline .controls .icon{
+    display: block;
+    margin:12px;
+}
+
+.component.narrative .strapline .controls .icon:hover{
+    color:#e2e2e2;
+}
+
+.component.narrative .slide .controls {
+    display: block;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top:50%;
+    z-index:10;
+    margin-top:-24px;
+    background-color:#fff;
+}
+
+.component.narrative .left {
+    left:0px;
+}
+
+.component.narrative .right {
+    right:0px;
+}
+.component.narrative .slide .controls .icon {
+    margin:12px;
+}
+
+.component.narrative .indicators {
+    text-align:center;
+}
+
+.component.narrative .progress {
+    display:inline-block;
+    width:8px;
+    height:8px;
+    background-color:#fff;
+    border:1px solid #454545;
+    border-radius:50%;
+    padding:0px;
+    margin:1px;
+}
+
+.component.narrative .progress.selected {
+    background-color:#454545;
+}
+
+/*///////////////////////
+	HOT GRAPHIC
+///////////////////////*/
+
+.component.hotgraphic .graphic {
+    position:relative;
+    border:1px solid #fbfbfb;
+}
+
+.component.hotgraphic .popup .graphic .controls {
+    width:40px;
+    height:40px;
+    position:absolute;
+    top:0px;
+    right:0px;
+    background-color:rgb(255,255,255);
+    background-color:rgba(255,255,255,0.6);
+    text-align:center;
+    line-height:40px;
+    font-size:30px;
+}
+
+.component.hotgraphic.mobile .popup {
+    display: none;
+    z-index: 300;
+    width:100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color:rgb(30,30,30);
+    height:100%;
+}
+
+.component.hotgraphic.desktop .popup {
+    display: none;
+    z-index: 299;
+    width:auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height:auto;
+    margin:40px;
+    background-color:#fff;
+    border:1px solid #b9b9b9;
+}
+
+.component.hotgraphic.mobile .popup > .inner {
+    padding: 20px;
+    background-color:#fff;
+    border: 1px solid #fbfbfb;
+    border-radius: 2px;
+    margin:10px 10px 10px 10px;
+}
+
+.component.hotgraphic.desktop .popup > .inner {
+    padding: 10px;
+    margin:0px;
+    
+}
+
+.component.hotgraphic .popup .inner .graphic {
+    position:relative;
+    text-align:center;
+    margin-top:0px;
+    border:none;
+}
+
+.component.hotgraphic.mobile .popup .inner .body {
+    border-top:1px solid #b9b9b9;
+    border-bottom:1px solid #b9b9b9;
+    padding:4px;
+    -webkit-overflow-scrolling: touch;
+    overflow-y:scroll;
+}
+
+.component.hotgraphic .popup h5 {
+    font-size:19px;
+    margin-bottom:8px
+}
+
+.component.hotgraphic.desktop .popup .content .body {
+    width:50%;
+    float:left;
+}
+
+.component.hotgraphic.desktop .popup .content .body .inner{
+    margin-right:5px;
+}
+
+.component.hotgraphic.desktop .popup .content .graphic {
+    width:50%;
+    float:right;
+}
+
+.component.hotgraphic.desktop .popup .content .graphic .inner {
+    padding-left:5px;
+} 
+
+.component.hotgraphic .toolbar {
+    padding:10px;
+    position:relative;
+}
+
+.component.hotgraphic .toolbar .done {
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+
+.component.hotgraphic .toolbar .controls {
+    float:left;
+    padding:2px;
+    margin-right:10px;
+}
+
+.component.hotgraphic .toolbar .count {
+    float:left;
+    height:30px;
+    line-height:30px;
+    margin-right:10px;
+}
+
+.component.hotgraphic.mobile .items .item {
+    display:block;
+    width:50%;
+    float:left;
+    margin-top:10px;  
+}
+
+.component.hotgraphic.desktop .item {
+    display:block;
+    position:absolute;
+    top:0%;
+    left:0%;
+}
+
+.component.hotgraphic.desktop .item .icon {
+
+}
+
+.component.hotgraphic .items .hotspot img {
+    margin-bottom:-4px;
+}
+
+.component.hotgraphic .items > :nth-child(odd) .inner {
+    margin-right:5px;
+}
+
+.component.hotgraphic .items > :nth-child(even) .inner {
+    margin-left:5px;
+}
+
+.component.hotgraphic .items .inner {
+    border:1px solid #fbfbfb;
+}
+
+.no-touch .component.hotgraphic .items .inner:hover {
+    border:1px solid #ccc;
+}
+
+.component.hotgraphic .indicators {
+    text-align: center;
+    position: fixed;
+    top: 18px;
+    width: 100%;
+}
+
+.component.hotgraphic .progress {
+    display:inline-block;
+    width:8px;
+    height:8px;
+    background-color:#fff;
+    border:1px solid #454545;
+    border-radius:50%;
+    padding:0px;
+    margin:1px;
+}
+
+.component.hotgraphic .progress.selected {
+    background-color:#454545;
+}
+
+/*///////////////////////
+	ACCORDION
+///////////////////////*/
+
+.component.accordion .item {
+    border: 1px solid #b9b9b9;
+    margin-bottom: 2px;
+}
+
+.component.accordion .item .title .inner {
+    padding:14px 14px 14px 42px;
+    color:#454545;
+}
+
+.component.accordion .item .body .inner {
+    padding:14px;
+}
+
+.component.accordion .item .icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    left: 10px;
+}
+
+.component.accordion .item .selected .arrow-r {
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    left: 10px;
+}
+
+.component.accordion .item .body {
+    display:none;
+    border-top: 1px solid #b9b9b9;
+}
+
+.component.accordion .item .title {
+    position:relative;
+    display:block;
+    background-color:#fff;
+}
+
+.no-touch .component.accordion .item .title:hover {
+    background-color:#ccc;
+    color:#fff;
+}
+
+.component.accordion .item .title.visited {
+    background-color:#8fc344;
+}
+
+.component.accordion .item .title.selected {
+    background-color:#b9b9b9;
+}
+
+.no-touch .component.accordion .item .title.visited:hover {
+    background-color:#8fc344;
+}
+
+/*///////////////////////
+	MCQ
+///////////////////////*/
+
+.component.mcq .item {
+    position:relative;
+}
+
+.component.mcq .item label{
+    display:block;
+    border:1px solid #b9b9b9;
+    margin-bottom: 2px;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    overflow:hidden;
+}
+
+.component.mcq label .inner {
+    padding:14px;   
+    margin-left: 38px;
+}
+
+.component.mcq .item input {
+    position:absolute;
+    top:14px;
+    left:14px;
+}
+
+.no-touch .component.mcq .item label:hover {
+    background-color:#aaa;
+}
+
+.component.mcq .item.correct label {
+    background-color:#8fc344;
+}
+
+.component.mcq .item.incorrect label {
+    background-color:#b9b9b9;
+}
+
+.component.mcq .state {
+    float:left;
+    width:48px;
+    height:48px;
+}
+
+.component.mcq .widget .icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    margin-left: 12px;
+}
+
+.component.mcq .submit {
+    border:1px solid #b9b9b9;
+    background-color:#8fc344;
+    color:#fff;
+}
+
+.component.mcq .button.model, .component.mcq .button.user, .component.mcq .button.reset {
+    border: 1px solid #B9B9B9;
+    background-color: #8FC344;
+    color: #fff;
+    display: none;
+}
+.component.mcq .widget.user .button.model, .component.mcq .widget.model .button.user {
+    display:inline-block;
+}
+
+.no-touch .component.mcq .button:hover {
+    border:1px solid #b9b9b9;
+    background-color:#ccc;
+    color:#000;
+}
+
+.component.mcq .widget.complete .submit {
+
+}
+
+.component.mcq .widget.submitted .button.submit {
+    display:none;   
+}
+.component.mcq .widget.submitted .button.reset {
+    display:inline-block;   
+}
+.component.mcq .widget.complete .button.reset {
+    display:none;   
+}
+.component.mcq .widget.complete.user .button.model {
+    display:inline-block;   
+}
+.component.mcq .widget.complete.user.correct .button {
+    display:inline-block;
+    visibility:hidden;
+}
+
+
+/*///////////////////////
+		Media
+///////////////////////*/
+
+.component.media video {
+		width:100%;	
+}
+.component.media .transcript {
+		display:none;	
+}
+
+/*///////////////////////
+		PPQ
+///////////////////////*/
+
+.ppq.component .pinboard img::-moz-selection {
+    background: transparent;
+    color: #fff; 
+    text-shadow: none;
+
+}
+
+.ppq.component .pinboard img::selection {
+    background: transparent;
+    color: #fff; 
+    text-shadow: none;
+}
+    
+.ppq.component .pinboard {
+    width:60%;
+    float:left;
+    position:relative;
+}
+
+.ppq.component .pinboard .marker {
+    position:absolute;
+    z-index:100;
+    display:none;
+    margin-left:-12px;
+    cursor:pointer;
+}
+.ppq.component .pinboard .marker.in-use {
+    display:block;   
+}
+.ppq.component .widget.mine .marker {
+    display:none;
+}
+.ppq.component .widget.mine .marker.in-use {
+    display:block;
+}
+.ppq.component .widget.model .marker {
+    display:block;
+}
+.ppq.component .instructions {
+    width:40%;
+    float:left;
+}
+.ppq.component .instructions .button {
+    margin-top:10px;   
+}
+.ppq.component .instructions > .inner {
+    padding:10px;   
+}
+.ppq.component .instructions .title {
+
+}
+.ppq.component .instructions .body {
+    margin-top:10px;
+}
+.ppq.component .button.mine, .ppq.component .button.model, .ppq.component .button.reset {
+    display:none;   
+}
+
+.ppq.component .widget.mine .marker.icon {
+    color:#E42E15
+}
+.ppq.component .widget.mine .marker.icon.correct {
+    color:#84A503
+}
+
+.ppq.component .pinboard img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*////////////////////////
+    ORDERING STYLING
+////////////////////////*/
+
+.component.ordering .item {
+    position: relative;
+    padding: 20px;
+    background-color: #e9e9e9;
+    margin-bottom:1px;
+    color:#000;
+}
+
+.component.ordering .item .label > .inner{
+    padding-right:90px;
+}
+
+.component.ordering .item .state {
+    position: absolute;
+    top: 50%;
+    right: 84px;
+    margin-top: -12px;
+}
+
+.component.ordering .item .input-spinner {
+    width: 20px;
+    right: 50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    background-color:#fff;
+}
+
+.component.ordering .item .spinner-container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height:100%;
+    color:#000;
+}
+
+.component.ordering .item .spinner {
+    width:40px;
+    position:absolute;
+    right:0px;
+    background-color:#8fc344;
+    color:#fff;
+}
+
+.component.ordering .item .spinner.up {
+    top:0px;
+    height:50%;
+}
+
+.component.ordering .item .spinner.down {
+    bottom:0px;
+    height:50%;
+}
+
+.component.ordering a.spinner .icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    left: 50%;
+    margin-left: -12px;
+}
+
+.component.ordering .error {
+    background-color: #ea5b6c;
+    color: #fff;
+}
+
+.component.ordering .widget.complete.correct .button.mine, 
+.component.ordering .widget.complete.correct .button, 
+.component.ordering .widget.complete .button.submit {
+    visibility:hidden;
+}
+
+.component.ordering .button.mine, 
+.component.ordering .button.model, 
+.component.ordering .button.reset,
+.component.ordering .widget.complete .button.reset,
+.component.ordering .widget.complete .button.preview {
+    display:none;
+}
+
+.component.ordering .button.submit,
+.component.ordering .button.preview,
+.component.ordering .button.reset,
+.component.ordering .button.model,
+.component.ordering .button.mine {
+    border: 1px solid #b9b9b9;
+    background-color: #8fc344;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.component.ordering .button.submit:hover,
+.component.ordering .button.preview:hover,
+.component.ordering .button.reset:hover,
+.component.ordering .button.model:hover,
+.component.ordering .button.mine:hover {
+    background-color:#b4d459;
+}
+
+.component.ordering .widget.complete.incorrect.mine .button.model {
+    display:inline-block;
+}
+    
+/*//////////////////
+    BLOCK SLIDER
+//////////////////*/
+    
+.block-slider-container {
+    position:relative;
+}
+
+.block-slider-container .block {
+    float:left;    
+}
+
+.block-slider {
+    overflow:hidden;
+}
+
+.block-slider-controls {
+    z-index:20;
+    position: relative;
+}
+
+.block-slider-controls a {
+    display:none;
+    background-color:#fff;
+    position:absolute;
+}
+
+.block-slider-controls .left {
+    left:0px;
+    color:#000;
+}
+
+.block-slider-controls .right {
+    right:0px;
+    color:#000;
+}
+
+.block-slider-tabs {
+    text-align:center;
+    width:100%;
+}
+
+.block-slider-tabs .tab {
+    display:inline-block;
+    background-color:#ccc;
+    position:static;
+    padding:4px;
+    text-align:center;
+}
+
+.block-slider-tabs .tab.selected {
+    background-color:#000;
+}
+
+.block-slider-locked {
+    display:none!important;
+}
+
+.block-slider-indicators {
+    width:100%;
+    position:absolute;
+    bottom:0px;
+    text-align:center;
+}
+
+.block-slider-indicators a {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #ccc;
+    border-radius:50%;
+    margin:4px;
+}
+
+.block-slider-indicators a.selected {
+    background-color: #000;
+}
+
+/*//////////////////
+    CONFIDENCE SLIDER
+//////////////////*/
+
+.component.confidence .widget .down {
+    width: 10%;
+    display: block;
+    height: 30px;
+    float: left;
+}
+
+.component.confidence .widget .slider.scale {
+    width: 80%;
+    height: 30px;
+    background-color: #CCC;
+    float: left;
+    position: relative;
+    border: 10px solid #CCC;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 20px;
+}
+.component.confidence .widget .slider.handle span{
+    display: block;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 20px; 
+}
+.component.confidence .widget .slider.handle {
+    position: absolute;
+    height: 20px;
+    cursor: pointer;
+    width: 20px;
+    top: -5px;
+    border: 10px solid;
+    border-radius: 50%;
+    margin-left:-20px;
+}
+.component.confidence .widget .slider.marker{
+	visibility:hidden;
+	position:absolute;
+	width: 5px;
+    height: 30px;
+    float: left;
+	background-color: rgb(175,175,175);
+}
+
+/*///////////////////////
+    REVEAL STYLING
+///////////////////////*/
+
+.component.reveal .widget {
+    position:relative;
+}
+
+.component.reveal .graphic {
+    overflow:hidden;
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    width:0px;
+}
+
+.component.reveal .graphic .text {
+    position: absolute;
+    top: 0px;
+    left:0px;
+}
+
+.component.reveal .reveal {
+	position:relative;
+    top:0px;
+    left:0px;
+}
+
+.component.reveal .reveal .text {
+    position: absolute;
+    top: 0px;
+    left:0px;
+}
+
+.component.reveal .handle {
+    display: block;
+    position: absolute;
+    left: 0%;
+    margin-left: 0px;
+    width: 40px;
+    background-color: rgb(69, 69, 69);
+    color: white;
+    padding: 4px;
+    height: 40px;
+    top: 50%;
+    margin-top: -20px;
+    text-align:center;
+}
+
+.component.reveal .handle .icon {
+    margin: 0px 8px;
+}
+
+/*///////////////////////
+    BLANK STYLING
+///////////////////////*/
+/*
+.component.blank {
+    display:none;
+}
+ */
+/*///////////////////////
+  Text Input
+ ///////////////////*/
+
+.component.textinput .items .inner {
+    width:100%;
+}
+
+.component.textinput .items .inner {
+    background:url('../bespoke/transparency.png') scroll repeat 0 0 transparent;
+    margin-bottom:5px;
+    width:95%;
+}
+
+.component.textinput .items .inner > div {
+    background-color:#8fc344;
+    border:1px solid #d6d8d5;
+    padding:4%;
+}
+
+.component.textinput .items .inner label {
+    background-color:transparent;
+    border:none;
+    margin:0;
+    height:auto;
+    line-height: 32px;
+    padding:0px;
+    float:left;
+    text-align:center;
+    cursor: default;
+}
+
+.component.textinput .items .inner .prefix {
+    width:20%;
+}
+
+.component.textinput .items .inner .suffix {
+    width:10%;  
+}
+
+.component.textinput .items .inner .prefix p,
+.component.textinput .items .inner .suffix p {
+    color:#fff;
+}
+
+.component.textinput .items .inner .state {
+    float:left;
+}
+
+.component.textinput .items .inner input[type="text"] {
+    margin:0;
+    padding:0 5px;
+    width: 54%;
+    float:left;
+    height:26px;
+}
+
+.items .inner input[type=text]:focus {
+    background-color:#d8d8d8;
+    border:2px solid #cccccc;
+    outline: none;
+}
+
+.button {
+    border: 1px solid #B9B9B9;
+    background-color: #000000;
+    color: #fff;    
+}
+
+.button.model, .button.mine, .button.reset {
+    display:none;
+}
+
+.button:hover {
+    border:1px solid #b9b9b9;
+    background-color:#ccc;
+    color:#000;
+}
+ 
+
+
+/*//////////////////
+    SLIDER
+//////////////////*/
+.component.slider .widget .holder {
+    padding-bottom: 0px;
+    width: 100%;
+}
+
+.component.slider .widget .slider.handle {
+    display: block;
+    position: absolute;
+    height: 30px;
+    cursor: pointer;
+    width: 30px;
+    top: -32px;
+    border-radius: 50%;
+    margin-left: -12px;
+    background-color: #8fc344 !important;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.6);
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+.component.slider .widget .marker {
+    display: none!important;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: -42px;
+    border-radius: 50%;
+    margin-left: -11px;
+    color: #fff;
+    cursor:default;
+    line-height: 24px;
+    text-align: center;
+    z-index: 1;
+    background-color: #8fc344;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+}
+
+.component.slider .widget .scaler {
+    width: 80%;
+    height: 2px;
+    background-color: #999999;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    border-top: none;
+    border-bottom: none;
+    margin: 20px 5%;
+    top: 25px;
+}
+
+.component.slider .widget .scaler .line {
+    display: block;
+    width: 2px;
+    height: 13px;
+    top: -11px;
+    background-color: #999999;
+    position: absolute;
+    z-index: 0;
+    margin-left: -2px;
+}
+
+.component.slider .widget .slider {
+    width: 80%;
+    height: 6px;
+    background-color: #999999;
+    float: left;
+    position: relative;
+    border: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 20px;
+    margin: 20px 5%;
+    top: 15px;
+    box-shadow: inset -1px 1px 1px 1px rgba(0,0,0,0.2);
+    z-index:2;
+}
+
+.component.slider .widget .bar {
+    height: 6px;
+    background-color: #8fc344;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 20px;
+    z-index:1;
+       
+}
+
+.component.slider .widget .outer-bar {
+    width: 85%;
+    height: 21px;
+    background-color: #f6f4ec;
+    float: left;
+    position: relative;
+    border: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 20px;
+    margin: 17px;
+    left: -9px;
+    top: -36px;
+    box-shadow: inset -1px 1px 2px 2px rgba(0,0,0,0.3);
+    z-index: 0;  
+}
+
+.component.slider .widget .result {
+    padding: 5px;
+    display: block;
+    margin-top: -80px;
+    float: right;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    background-color:transparent !important;
+    
+}
+
+.component.slider .widget .model-answer {
+    display: none;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: -42px;
+    border-radius: 50%;
+    margin-left: -11px;
+    color: #fff;
+    cursor:default;
+    line-height: 24px;
+    text-align: center;
+    z-index: 1;
+    background-color: #8fc344;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.5);    
+}
+
+.component.slider .widget .result.icon.tick {
+    color:#8fc344;
+}
+
+.component.slider .widget .result.icon.cross {
+    color:#8fc344;
+}
+
+.component.slider .widget .scale-labels {
+    width:80%;
+    margin:2px 5%;
+    height:20px;
+}
+
+.component.slider .widget .scale-labels .scale-start {
+    display:inline-block;
+    float:left;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    border-radius: 5px;
+    margin-left:-10px;
+    
+}
+
+.component.slider .widget .scale-labels .scale-end {
+    display:inline-block;
+    float:right;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    border-radius: 5px;
+    margin-right:-10px;
+}
+
+.component.slider .widget .marker.display-block {
+    display: block!important;
+}
+
+.component.slider .widget .myanswermarker {
+    display: none;
+    position: absolute;
+    height: 26px;
+    cursor: pointer;
+    width: 26px;
+    top: -11px;
+    border-radius: 50%;
+    margin-left: -13px;
+    background-color: #666;
+    color:#fff;
+    line-height:26px;
+    text-align:center;
+}
+
+.component.slider .widget .onemodel.answer {
+    display: none;
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    top: -11px;
+    border-radius: 50%;
+    margin-left: -13px;
+    background-color: #8fc344;
+    color:#fff;
+    line-height:26px;
+    text-align:center;
+    z-index:1;
+}
+
+.component.slider .widget .button.submit {
+    border:1px solid #b9b9b9;
+    background-color:#8fc344;
+    color:#fff;
+    margin-top:10px;
+}
+
+.component.slider .widget .button.reset {
+    display:none;
+    border:1px solid #b9b9b9;
+    background-color:#8fc344;
+    color:#fff;
+    margin-top:10px;
+}
+
+.component.slider .widget .button.model {
+    display:none;
+    border:1px solid #b9b9b9;
+    background-color:#8fc344;
+    color:#fff;
+    margin-top:10px;
+}
+
+.component.slider .widget .button.mine {
+    display:none;
+    border:1px solid #b9b9b9;
+    background-color:#8fc344;
+    color:#fff;
+    margin-top:10px;
+}
+
+/*////////////////////////
+// MATCHING
+////////////////////////*/
+
+.component.matching .item {
+    margin-bottom:4px;
+    border-bottom:1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.component.matching .item p {
+    margin-bottom:4px;
+}
+
+.component.matching .select {
+    position: relative;
+    width: 260px;
+    overflow: hidden;
+    color:#fff;
+}
+
+.component.matching .select, .component.matching .complete .select, .component.matching .select, .component.matching .complete .select:hover {
+    background-color: #8fc344;
+}
+
+.component.matching .select select {
+    position:relative;
+    width: 280px;
+    border: none;
+    background: none;
+    padding: 10px 0px 10px 10px;
+    cursor:pointer;
+    color:#fff;
+}
+
+.ie8 .component.matching .select .disabled {
+    background-color:#333;
+}
+
+.component.matching .select select:focus {
+    background-color: #333;
+}
+
+.component.matching .select .state {
+    position: absolute;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    margin-top: -12px;
+    z-index: 0;
+}
+
+.component.matching .button.submit, 
+.component.matching .button.reset, 
+.component.matching .button.mine, 
+.component.matching .button.model,
+.component.matching .button.model {
+    background-color: #8fc344;
+    color: #ffffff;
+}
+
+.component.matching .select:hover, .component.matching .button:hover {
+    background-color: #b4d459;
+}
+
+.component.matching .complete .model {
+    display:inline-block;
+}
+
+.component.matching .complete.correct .model {
+    visibility:hidden;
+}
+
+/*////////////////////////
+// GRAPHICAL MCQ
+////////////////////////*/
+
+.component.gmcq .item {
+    position:relative;
+    float:left;
+}
+
+.component.gmcq .item label{
+    display:block;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    overflow:hidden;
+    padding:5px;
+}
+
+.component.gmcq label .inner {
+    margin-top: 10px;
+    text-align:center;
+}
+
+.component.gmcq .item input {
+    position:absolute;
+    top:14px;
+    left:-9999px;
+}
+
+.component.gmcq .widget .pointboard {
+    position:relative;
+}
+
+.no-touch .component.gmcq .item label:hover {
+    background-color: #dbdbdb;
+}
+
+.component.gmcq .widget .icon {
+    text-align: center;
+    margin:0 auto;
+}
+
+.component.gmcq .submit {
+    border:1px solid #b9b9b9;
+    background-color:#8fc344;
+    color:#fff;
+}
+
+.component.gmcq .button.model, .component.gmcq .button.mine, .component.gmcq .button.reset {
+    border: 1px solid #B9B9B9;
+    background-color: #8FC344;
+    color: #fff;
+    display: none;
+}
+.component.gmcq .widget.mine .button.model, .component.gmcq .widget.model .button.mine {
+    display:inline-block;
+}
+.no-touch .component.gmcq .button:hover {
+    border:1px solid #b9b9b9;
+    background-color:#ccc;
+    color:#000;
+}
+
+.component.gmcq .widget .buttons {
+    width:100%;
+}
+
+.component.gmcq .widget.complete.mine .item.correct .selected .icon,
+.component.gmcq .widget.complete.model .item.correct .icon:before {
+    color:#8FC344;
+}
+
+.component.gmcq .widget.complete.mine .item.incorrect .selected .icon,
+.component.gmcq .widget.complete.model .item.incorrect .icon:before {
+    color:#db214f; 
+    
+}
+
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+@media all and (min-width:900px) {
+
+    #wrapper {
+        width:900px;
+        margin:0 auto;
+    }	
+        
+    #tutor {
+        width: 900px;
+    }
+        
+    #navigation {
+        left:auto;
+        width:900px;
+        margin: 0 auto;
+    }
+        
+    #menu .item {
+        display: block;
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+        float: left;
+    }
+        
+    #guide .item {
+        width:320px;
+    }
+        
+    .component.left, .component.right {
+        width: 50%; 
+        float:left;
+    }
+    
+    .component.right > .inner {
+        margin-left:5px;	
+    }
+    .component.left > .inner {
+        margin-right:5px;	
+    }	
+        
+    .component.narrative .slide {
+        overflow:hidden;
+    }
+        
+    .component.narrative .graphic {
+        margin-right:0px;
+    }
+        
+    .component.narrative .controls.text {
+        display:none;
+    }
+/*End MediaQ*/
+}
+
+@media all and (max-width:899px) and (min-width:700px) {
+    
+    #wrapper {
+        width:100%;
+    }
+        
+    #tutor {
+        width: 100%;
+    }
+        
+    #menu .item {
+        display: block;
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+        float: left;
+    }
+        
+    .component.right, .component.left {
+        width: 50%;
+        float:left;
+    }
+            
+    .component.right > .inner {
+        margin-left:5px;	
+    }
+            
+    .component.left > .inner {
+        margin-right:5px;	
+    }
+    
+    .component.narrative .slide {
+        overflow:hidden;
+    }
+        
+    #inbox .messages .message .pop-out {
+        width:480px;   
+    }
+        
+/*End MediaQ*/		
+}
+
+@media all and (max-width:699px) and (min-width:440px) {
+
+    #wrapper {
+        width:440px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+        
+    #tutor {
+        width: 440px;
+    }
+        
+    #navigation {
+        left:auto;
+        width:440px;
+        margin: 0 auto;
+    }
+        
+    .ppq.component .widget .pinboard, .ppq.component .widget .instructions {
+        width:100%;
+    }
+        
+    #inbox {
+        width:100%;        
+    }
+    #inbox .messages .message .pop-out {
+        position:static;
+        width:100%;
+        z-index:420;        
+    }
+    #inbox .messages .message.open .preview {
+        display:none;       
+    }
+    #inbox .messages {
+        overflow:scroll;
+    }
+    
+/*End MediaQ*/   
+}
+
+@media all and (max-width: 439px) {
+    
+    #wrapper {
+        width:100%;
+    }
+        
+    #tutor {
+        width: 100%;
+    }
+        
+    .ppq.component .pinboard, .ppq.component .instructions {
+        width:100%;
+    }
+        
+    #inbox {
+        width:100%;        
+    }
+    #inbox .messages .message .pop-out {
+        position:static;
+        width:100%;
+        z-index:420;        
+    }
+    #inbox .messages {
+        overflow:scroll;   
+    }
+    #inbox .messages .message.open .preview {
+        display:none;       
+    }
+    #guide {
+        width:96%;
+        margin-left:auto;
+        left:2%;
+        top:48px;
+    }
+    #guide .item {
+        width:220px;
+    }
+    #guide .item .icon {
+        height:74px;
+        font-size:60px;
+    }
+    #guide .item .spacer {
+        min-height:70px;
+    }
+    
+    #guide .graphic {
+        min-height:70px;
+    }
+            
+/*End MediaQ*/		
+}
+
+@media all and (orientation: portrait) {
+		
+		
+/*End MediaQ*/	
+}
+
+@media all and (orientation: landscape) {
+		
+		
+/*End MediaQ*/	
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+		
+		
+/*End MediaQ*/
+}

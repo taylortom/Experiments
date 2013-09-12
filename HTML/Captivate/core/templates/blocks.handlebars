@@ -1,0 +1,51 @@
+{{#if blockSlider.active}}
+    {{#if blockSlider.tabs}}
+    <div class="block-slider-tabs">
+        {{#each blocks}}
+        <a href="#" class="tab tab-{{id}} index-{{@index}}">{{title}}</a>
+        {{/each}}
+    </div>
+    {{else}}
+    <div class="block-slider-controls">
+    
+        <a href="#" class="left">
+            <div class="icon arrow-l"></div>
+        </a>
+        <a href="#" class="right">
+            <div class="icon arrow-r"></div>
+        </a>
+        
+    </div>
+    {{/if}}
+{{/if}}
+<div class="inner">
+    {{#if title}}
+    <div class="title">
+        <h2 class="inner">
+            {{{title}}}
+        </h2>
+    </div>
+    {{/if}}
+    {{#if body}}
+        <div class="body">
+            <p class="inner">
+                {{{body}}}
+            </p>
+        </div>
+    {{/if}}
+    {{#if blockSlider.active}}
+    <div class="block-slider">
+        <div class="inner clearfix"></div>
+    </div>
+    {{/if}}
+</div>
+{{#if blockSlider.active}}
+{{#if blockSlider.indicators}}
+<div class="block-slider-indicators">
+    {{#each blocks}}
+    <a href="#" class="indicator">
+    </a>
+    {{/each}}
+</div>
+{{/if}}
+{{/if}}

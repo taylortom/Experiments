@@ -1,0 +1,878 @@
+
+    
+body, p, select, input, textarea {
+    {{#if mainFontFamily}}
+    font-family: {{{mainFontFamily}}};{{/if}}
+    font-size: {{mainTextSize}};
+}
+
+body {
+    {{#if bodyBackgroundColor}}
+    background-color:#{{bodyBackgroundColor}};
+    {{else}}
+    background-color:transparent;
+    {{/if}}
+}
+
+#navigation {
+    {{#if navBackgroundColor}}
+    background-color:#{{navBackgroundColor}};
+    {{else}}
+    background-color:transparent;
+    {{/if}}
+    border-bottom: 1px solid #{{navBorderColor}};
+}
+
+#wrapper {
+    {{#if pageBackgroundColor}}
+    background-color:#{{pageBackgroundColor}};
+    {{else}}
+    background-color:transparent;
+    {{/if}}
+}
+
+#page > .inner {
+    padding-top:{{pagePaddingTop}};
+    padding-right:{{pagePaddingRight}};
+    padding-bottom:{{pagePaddingBottom}};
+    padding-left:{{pagePaddingLeft}};
+}
+
+#page > .inner > .title > .inner {
+    padding-top:{{pageTitlePaddingTop}};
+    padding-right:{{pageTitlePaddingRight}};
+    padding-bottom:{{pageTitlePaddingBottom}};
+    padding-left:{{pageTitlePaddingLeft}};
+}
+
+.article {
+    {{#if articleBackgroundColor}}
+    background-color:#{{articleBackgroundColor}};
+    {{else}}
+    background-color:transparent;
+    {{/if}}
+    margin-top:{{articleMarginTop}};
+}
+
+.article > .inner {
+    padding-top:{{articlePaddingTop}};
+    padding-right:{{articlePaddingRight}};
+    padding-bottom:{{articlePaddingBottom}};
+    padding-left:{{articlePaddingLeft}};
+}
+
+.article > .inner > .title > .inner {
+    padding-top:{{articleTitlePaddingTop}};
+    padding-right:{{articleTitlePaddingRight}};
+    padding-bottom:{{articleTitlePaddingBottom}};
+    padding-left:{{articleTitlePaddingLeft}};
+}
+
+.block {
+    {{#if blockBackgroundColor}}
+    background-color:{{blockBackgroundColor}};
+    {{else}}
+    background-color:transparent;
+    {{/if}}
+    margin-top:{{blockMarginTop}};
+}
+
+.block > .inner {
+    padding-top:{{blockPaddingTop}};
+    padding-right:{{blockPaddingRight}};
+    padding-bottom:{{blockPaddingBottom}};
+    padding-left:{{blockPaddingLeft}};
+}
+
+.block > .inner > .title > .inner {
+    padding-top:{{blockTitlePaddingTop}};
+    padding-right:{{blockTitlePaddingRight}};
+    padding-bottom:{{blockTitlePaddingBottom}};
+    padding-left:{{blockTitlePaddingLeft}};
+}
+
+.component {
+    {{#if componentBackgroundColor}}
+    background-color:#{{componentBackgroundColor}};
+    {{else}}
+    background-color:transparent;
+    {{/if}}
+    margin-top: {{componentMarginTop}};
+}
+
+body, p {
+    color: #{{pColor}};
+}
+
+a, a:visited, .component.narrative .strapline .controls .icon, .component.mcq .widget .item label {
+    color: #{{linkIconColor}};
+}
+
+.no-touch a:hover, 
+.no-touch .component.accordion .item .title:hover, 
+.no-touch a:focus {
+    color: #{{linkIconHoverColor}};
+}
+
+h1 {
+    font-size: {{pageTitleSize}};
+    color: #{{pageTitleColor}};
+}
+
+h2 {
+    font-size: {{articleTitleSize}};
+    color: #{{articleTitleColor}};
+}
+
+h3 {
+    font-size: {{blockTitleSize}};
+    color: #{{blockTitleColor}};
+}
+
+h4 {
+    font-size: {{componentTitleSize}};
+    color: #{{componentTitleColor}};
+}
+
+.component.text {
+    {{#if textMarginTop}}
+    margin-top:{{textMarginTop}};
+    {{/if}}
+}
+
+.component.text .title h4 {
+    {{#if textTitleSize}}
+    font-size:{{textTitleSize}};
+    {{/if}}
+    {{#if textTitleColor}}
+    color:#{{textTitleColor}};
+    {{/if}}
+}
+
+.component.graphic {
+    {{#if graphicMarginTop}}
+    margin-top:{{graphicMarginTop}};
+    {{/if}}
+}
+
+.component.graphic .title h4 {
+    {{#if graphicTitleSize}}
+    font-size:{{graphicTitleSize}};
+    {{/if}}
+    {{#if graphicTitleColor}}
+    color:#{{graphicTitleColor}};
+    {{/if}}
+}
+
+.component.media {
+    {{#if mediaMarginTop}}
+    margin-top:{{mediaMarginTop}};
+    {{/if}}
+}
+
+.component.media .title h4 {
+    {{#if mediaTitleSize}}
+    font-size:{{mediaTitleSize}};
+    {{/if}}
+    {{#if mediaTitleColor}}
+    color:#{{mediaTitleColor}};
+    {{/if}}
+}
+
+.component.narrative {
+    {{#if narrativeMarginTop}}
+    margin-top:{{narrativeMarginTop}};
+    {{/if}}
+}
+
+.component.narrative .title h4 {
+    {{#if narrativeTitleSize}}
+    font-size:{{narrativeTitleSize}};
+    {{/if}}
+    {{#if narrativeTitleColor}}
+    color:#{{narrativeTitleColor}};
+    {{/if}}
+}
+
+.component.narrative .slide .controls {
+    {{#if narrativeControlsColor}}
+    background-color:#{{narrativeControlsColor}};
+    {{/if}}
+}
+
+.component.narrative .slide .controls .icon {
+    {{#if narrativeControlsIconColor}}
+    color:#{{narrativeControlsIconColor}};
+    {{/if}}
+}
+
+.no-touch .component.narrative .slide .controls .icon:hover,
+.no-touch .component.narrative .slide .controls:focus .icon {
+    {{#if narrativeControlsIconHoverColor}}
+    color:#{{narrativeControlsIconHoverColor}};
+    {{/if}}
+}
+
+.component.narrative .strapline .controls .icon {
+    {{#if narrativeMobileIconColor}}
+    color:#{{narrativeMobileIconColor}};
+    {{/if}}
+}
+
+.no-touch .component.narrative .strapline .controls .icon:hover {
+    {{#if narrativeMobileIconHoverColor}}
+    color:#{{narrativeMobileIconHoverColor}};
+    {{/if}}
+}
+
+.component.narrative .strapline {
+    {{#if narrativeStraplineBackgroundColor}}
+    background-color:#{{narrativeStraplineBackgroundColor}};
+    {{/if}}
+    {{#if narrativeStraplineTextColor}}
+    color:#{{narrativeStraplineTextColor}};
+    {{/if}}
+}
+
+.component.narrative .strapline {
+    {{#if narrativeStraplineBackgroundColor}}
+    background-color:#{{narrativeStraplineBackgroundColor}};
+    {{/if}}
+    {{#if narrativeStraplineTextColor}}
+    color:#{{narrativeStraplineTextColor}};
+    {{/if}}
+}
+
+.component.narrative .popup > .inner {
+    {{#if narrativePopupBackgroundColor}}
+    background-color:#{{narrativePopupBackgroundColor}};
+    {{/if}}
+}
+
+.component.narrative .popup > .inner .content p {
+    {{#if narrativePopupTextColor}}
+    color:#{{narrativePopupTextColor}};
+    {{/if}}
+}
+
+.component.narrative .popup > .inner .toolbar .title h5 {
+    {{#if narrativePopupTextColor}}
+    color:#{{narrativePopupTextColor}};
+    {{/if}}
+}
+
+.component.narrative .popup .close {
+    {{#if narrativePopupIconColor}}
+    color:#{{narrativePopupIconColor}};
+    {{/if}}
+}
+
+.no-touch .component.narrative .popup .close:hover {
+    {{#if narrativePopupIconHoverColor}}
+    color:#{{narrativePopupIconHoverColor}};
+    {{/if}}
+}
+
+.component.hotgraphic {
+    {{#if hotGraphicMarginTop}}
+    margin-top:{{hotGraphicMarginTop}};
+    {{/if}}
+}
+
+.component.hotgraphic .title h4 {
+    {{#if hotGraphicTitleSize}}
+    font-size:{{hotGraphicTitleSize}};
+    {{/if}}
+    {{#if hotGraphicTitleColor}}
+    color:#{{hotGraphicTitleColor}};
+    {{/if}}
+}
+
+.component.hotgraphic .widget .graphic .item {
+    {{#if hotGraphicPinColor}}
+    color:#{{hotGraphicPinColor}};
+    {{/if}}
+}
+
+.no-touch .component.hotgraphic .widget .graphic .item:hover,
+.no-touch .component.hotgraphic .widget .graphic .item:focus {
+    {{#if hotGraphicPinHoverColor}}
+    color:#{{hotGraphicPinHoverColor}};
+    {{/if}}
+}
+
+.component.hotgraphic .widget .graphic .item .icon {
+    {{#if hotGraphicPinSize}}
+    font-size:{{hotGraphicPinSize}};
+    {{/if}}
+}
+
+.component.hotgraphic.desktop .popup {
+    {{#if hotGraphicPopupBackgroundColor}}
+    background-color:#{{hotGraphicPopupBackgroundColor}};
+    {{/if}}
+    {{#if hotGraphicPopupBorderColor}}
+    border-color:#{{hotGraphicPopupBorderColor}};
+    {{/if}}
+}
+
+.component.hotgraphic.desktop .popup .toolbar {
+    {{#if hotGraphicPopupToolbarBackgroundColor}}
+    background-color:#{{hotGraphicPopupToolbarBackgroundColor}};
+    {{/if}}
+}
+
+.component.hotgraphic .toolbar .controls, .component.hotgraphic .toolbar .done {
+    {{#if hotGraphicPopupToolbarIconColor}}
+    color:#{{hotGraphicPopupToolbarIconColor}};
+    {{/if}}
+}
+
+.no-touch .component.hotgraphic .toolbar .controls:hover, 
+.no-touch .component.hotgraphic .toolbar .done:hover,
+.no-touch .component.hotgraphic .toolbar .controls:focus, 
+.no-touch .component.hotgraphic .toolbar .done:focus {
+    {{#if hotGraphicPopupToolbarIconHoverColor}}
+    color:#{{hotGraphicPopupToolbarIconHoverColor}};
+    {{/if}}
+}
+
+.component.hotgraphic.desktop .popup .toolbar .count {
+    {{#if hotGraphicPopupToolbarTextColor}}
+    color:#{{hotGraphicPopupToolbarTextColor}};
+    {{/if}}
+}
+
+.component.hotgraphic .popup h5, .component.hotgraphic .popup p {
+    {{#if hotGraphicPopupTextColor}}
+    color:#{{hotGraphicPopupTextColor}};
+    {{/if}}
+}
+
+.component.hotgraphic.desktop .popup > .inner {
+    {{#if hotGraphicPopupPadding}}
+    padding:{{hotGraphicPopupPadding}}px;
+    {{/if}}
+}
+
+.component.hotgraphic.desktop .popup .content .graphic .inner {
+    {{#if hotGraphicPopupSpacing}}
+    padding-left:{{hotGraphicPopupSpacing}}px;
+    {{/if}}
+}
+
+.component.hotgraphic.desktop .popup .content .body .inner {
+    {{#if hotGraphicPopupSpacing}}
+    padding-right:{{hotGraphicPopupSpacing}}px;
+    {{/if}}
+}
+        
+.component.accordion {
+    {{#if accordionMarginTop}}
+    margin-top:{{accordionMarginTop}};
+    {{/if}}
+}
+
+.component.accordion .title h4 {
+    {{#if accordionTitleSize}}
+    font-size:{{accordionTitleSize}};
+    {{/if}}
+    {{#if accordionTitleColor}}
+    color:#{{accordionTitleColor}};
+    {{/if}}
+}
+
+.component.accordion .widget .item .title {
+    {{#if accordionIconColor}}
+    color:#{{accordionIconColor}};
+    {{/if}}
+}
+
+.no-touch .component.accordion .widget .item .title:hover,
+.no-touch .component.accordion .widget .item .title:focus {
+    {{#if accordionIconHoverColor}}
+    color:#{{accordionIconHoverColor}};
+    {{/if}}
+}
+
+.component.accordion .widget .item .title.visited, 
+.no-touch .component.accordion .widget .item .title.visited:hover,
+.no-touch .component.accordion .widget .item .title.visited:focus {
+    {{#if accordionIconVisitedColor}}
+    color:#{{accordionIconVisitedColor}};
+    {{/if}}
+}
+
+.component.accordion .widget .item .title {
+    {{#if accordionItemBackgroundColor}}
+    background-color:#{{accordionItemBackgroundColor}};
+    {{/if}}
+}
+
+.no-touch .component.accordion .widget .item .title:hover {
+    {{#if accordionItemHoverBackgroundColor}}
+    background-color:#{{accordionItemHoverBackgroundColor}};
+    {{/if}}
+}
+
+.component.accordion .widget .item .title.visited, .no-touch .component.accordion .widget .item .title.visited:hover {
+    {{#if accordionItemVisitedBackgroundColor}}
+    background-color:#{{accordionItemVisitedBackgroundColor}};
+    {{/if}}
+}
+
+.component.accordion .widget .item .title .inner {
+    {{#if accordionItemTitleTextColor}}
+    color:#{{accordionItemTitleTextColor}};
+    {{/if}}
+}
+
+.no-touch .component.accordion .widget .item .title .inner:hover {
+    {{#if accordionItemTitleTextHoverColor}}
+    color:#{{accordionItemTitleTextHoverColor}};
+    {{/if}}
+}
+
+.component.accordion .widget .item .title.visited .inner, .no-touch .component.accordion .widget .item .title.visited .inner:hover {
+    {{#if accordionItemTitleTextVisitedColor}}
+    color:#{{accordionItemTitleTextVisitedColor}};
+    {{/if}}
+}
+
+.component.accordion .widget .item .body {
+    {{#if accordionItemBodyBackgroundColor}}
+    background-color:#{{accordionItemBodyBackgroundColor}};
+    {{/if}}
+}
+
+.component.accordion .widget .item .body p {
+    {{#if accordionItemBodyPadding}}
+    padding:{{accordionItemBodyPadding}};
+    {{/if}}
+    {{#if accordionItemBodyTextColor}}
+    color:#{{accordionItemBodyTextColor}};
+    {{/if}}
+}
+
+.component.accordion .item {
+    margin-bottom:{{accordionItemSpacing}};
+    border-color:#{{accordionItemBorderColor}};
+}
+
+.component.mcq {
+    {{#if mcqMarginTop}}
+    margin-top:{{mcqMarginTop}};
+    {{/if}}
+}
+
+.component.mcq .title h4 {
+    {{#if mcqTitleSize}}
+    font-size:{{mcqTitleSize}};
+    {{/if}}
+    {{#if mcqTitleColor}}
+    color:#{{mcqTitleColor}};
+    {{/if}}
+}
+
+.component.mcq .widget .item label {
+    {{#if mcqIconColor}}
+    color:#{{mcqIconColor}};
+    {{/if}}
+    {{#if mcqItemBackgroundColor}}
+    background-color:#{{mcqItemBackgroundColor}};
+    {{/if}}
+}
+
+.component.mcq .widget .item label:hover, 
+.component.mcq .widget .item label.highlighted {
+    {{#if mcqIconHoverColor}}
+    color:#{{mcqIconHoverColor}};
+    {{/if}}
+    {{#if mcqItemHoverBackgroundColor}}
+    background-color:#{{mcqItemHoverBackgroundColor}};
+    {{/if}}
+}
+
+.component.mcq .widget .item label.selected {
+    {{#if mcqIconSelectedColor}}
+    color:#{{mcqIconSelectedColor}};
+    {{/if}}
+    {{#if mcqItemSelectedBackgroundColor}}
+    background-color:#{{mcqItemSelectedBackgroundColor}};
+    {{/if}}
+}
+
+/*.component.mcq .widget .item label {
+    background-color
+}*/
+
+.component.mcq .widget .item label h5 {
+    {{#if mcqItemTextColor}}
+    color:#{{mcqItemTextColor}};
+    {{/if}}
+}
+
+.no-touch .component.mcq .widget .item label h5:hover  {
+    {{#if mcqItemTextHoverColor}}
+    color:#{{mcqItemTextHoverColor}};
+    {{/if}}
+}
+
+.no-touch .component.mcq .widget.complete .item label h5:hover  {
+    {{#if mcqItemTextColor}}
+    color:#{{mcqItemTextColor}};
+    {{/if}}
+}
+
+.component.mcq .widget .item label.selected h5, .no-touch .component.mcq .widget .item label.selected h5:hover{
+    {{#if mcqItemTextSelectedColor}}
+    color:#{{mcqItemTextSelectedColor}};
+    {{/if}}
+}
+
+.no-touch .component.mcq .widget.complete .item label:hover {
+    {{#if mcqItemBackgroundColor}}
+    background-color:#{{mcqItemBackgroundColor}};
+    {{/if}}
+    {{#if mcqIconColor}}
+    color:#{{mcqIconColor}};
+    {{/if}}
+}
+
+.component.mcq .widget.complete .item label.selected, .no-touch .component.mcq .widget.complete .item label.selected:hover{
+    {{#if mcqItemSelectedBackgroundColor}}
+    background-color:#{{mcqItemSelectedBackgroundColor}};
+    {{/if}}
+}
+
+.component.mcq .widget.complete.model .item label.selected, .no-touch .component.mcq .widget.complete.model .item label.selected:hover{
+    {{#if mcqItemBackgroundColor}}
+    background-color:#{{mcqItemBackgroundColor}};
+    {{/if}}
+}
+
+.component.mcq .widget.complete.model .item.correct label, .no-touch .component.mcq .widget.complete.model .item.correct label:hover{
+    {{#if mcqItemSelectedBackgroundColor}}
+    background-color:#{{mcqItemSelectedBackgroundColor}};
+    {{/if}}
+}
+
+.component.mcq .widget.complete.model .item label.selected h5, .no-touch .component.mcq .widget.complete.model .item label.selected h5:hover{
+    {{#if mcqItemTextColor}}
+    color:#{{mcqItemTextColor}};
+    {{/if}}
+}
+
+.component.mcq .widget.complete .item.correct .selected .state {
+    {{#if mcqCorrectIconColor}}
+    color:#{{mcqCorrectIconColor}};
+    {{/if}}
+}
+
+.component.mcq .widget.complete .item.incorrect .selected .state {
+    {{#if mcqIncorrectIconColor}}
+    color:#{{mcqIncorrectIconColor}};
+    {{/if}}
+}
+
+.component.mcq .widget.complete.model .item.correct .state {
+    {{#if mcqCorrectIconColor}}
+    color:#{{mcqCorrectIconColor}};
+    {{/if}}
+}
+
+.component.mcq .widget.complete.model .item.incorrect .state {
+    {{#if mcqIncorrectIconColor}}
+    color:#{{mcqIncorrectIconColor}};
+    {{/if}}
+}
+
+.component.mcq .button.submit, .component.mcq .button.reset, .component.mcq .button.mine, .component.mcq .button.model {
+    {{#if mcqButtonBackgroundColor}}
+    background-color:#{{mcqButtonBackgroundColor}};
+    {{/if}}
+    {{#if mcqButtonTextColor}}
+    color:#{{mcqButtonTextColor}};
+    {{/if}}
+}
+
+.no-touch .component.mcq .button.submit:hover, 
+.no-touch .component.mcq .button.reset:hover, 
+.no-touch .component.mcq .button.mine:hover, 
+.no-touch .component.mcq .button.model:hover,
+.no-touch .component.mcq .button.submit:focus, 
+.no-touch .component.mcq .button.reset:focus, 
+.no-touch .component.mcq .button.mine:focus, 
+.no-touch .component.mcq .button.model:focus {
+    {{#if mcqButtonBackgroundHoverColor}}
+    background-color:#{{mcqButtonBackgroundHoverColor}};
+    {{/if}}
+    {{#if mcqButtonTextHoverColor}}
+    color:#{{mcqButtonTextHoverColor}};
+    {{/if}}
+}
+
+.component.ppq {
+    {{#if ppqMarginTop}}
+    margin-top:{{ppqMarginTop}};
+    {{/if}}
+}
+
+.component.ppq .title h4 {
+    {{#if ppqTitleSize}}
+    font-size:{{ppqTitleSize}};
+    {{/if}}
+    {{#if ppqTitleColor}}
+    color:#{{ppqTitleColor}};
+    {{/if}}
+}
+
+.component.ppq .pinboard .marker {
+    {{#if ppqPinColor}}
+    color:#{{ppqPinColor}};
+    {{/if}}
+}
+
+.no-touch .component.ppq .pinboard .marker:hover {
+    {{#if ppqPinHoverColor}}
+    color:#{{ppqPinHoverColor}};
+    {{/if}}
+}
+
+.component.ppq .button.submit, .component.ppq .button.reset, .component.ppq .button.mine, .component.ppq .button.model {
+    {{#if ppqButtonBackgroundColor}}
+    background-color:#{{ppqButtonBackgroundColor}};
+    {{/if}}
+    {{#if ppqButtonTextColor}}
+    color:#{{ppqButtonTextColor}};
+    {{/if}}
+}
+
+.no-touch .component.ppq .button.submit:hover, 
+.no-touch .component.ppq .button.reset:hover, 
+.no-touch .component.ppq .button.mine:hover, 
+.no-touch .component.ppq .button.model:hover,
+.no-touch .component.ppq .button.submit:focus, 
+.no-touch .component.ppq .button.reset:focus, 
+.no-touch .component.ppq .button.mine:focus, 
+.no-touch .component.ppq .button.model:focus {
+    {{#if ppqButtonBackgroundHoverColor}}
+    background-color:#{{ppqButtonBackgroundHoverColor}};
+    {{/if}}
+    {{#if ppqButtonTextHoverColor}}
+    color:#{{ppqButtonTextHoverColor}};
+    {{/if}}
+}
+
+.component.ppq .widget.mine .marker.icon.correct {
+    {{#if ppqPinCorrectColor}}
+    color:#{{ppqPinCorrectColor}};
+    {{/if}}
+}
+
+.component.ppq .widget.mine .marker.icon {
+    {{#if ppqPinIncorrectColor}}
+    color:#{{ppqPinIncorrectColor}};
+    {{/if}}
+}
+
+#guide {
+    {{#if guideBackgroundColor}}
+    background-color:#{{guideBackgroundColor}};
+    {{/if}}
+}
+
+#guide .item .title h6 {
+    {{#if guideTitleTextSize}}
+    font-size:{{guideTitleTextSize}}px;
+    {{/if}}
+    {{#if guideTextColor}}
+    color:#{{guideTextColor}};
+    {{/if}}
+}
+
+#guide .item .body p {
+    {{#if guideBodyTextSize}}
+    font-size:{{guideBodyTextSize}}px;
+    {{/if}}
+    {{#if guideTextColor}}
+    color:#{{guideTextColor}};
+    {{/if}}
+}
+
+#guide .left, #guide .right, #guide .done {
+    {{#if guideIconColor}}
+    color:#{{guideIconColor}};
+    {{/if}}
+}
+
+.no-touch #guide .left:hover,
+.no-touch #guide .right:hover, 
+.no-touch #guide .done:hover,
+.no-touch #guide .left:focus, 
+.no-touch #guide .right:focus, 
+.no-touch #guide .done:focus {
+    {{#if guideIconHoverColor}}
+    color:#{{guideIconHoverColor}};
+    {{/if}}
+}
+
+#guide .footer {
+    {{#if guideFooterBackgroundColor}}
+    background-color:#{{guideFooterBackgroundColor}};
+    {{/if}}
+}
+
+#guide .footer .indicators .progress {
+    {{#if guideFooterProgressColor}}
+    background-color:#{{guideFooterProgressColor}};
+    {{/if}}
+}
+
+#guide .footer .indicators .progress.selected {
+    {{#if guideFooterProgressSelectedColor}}
+    background-color:#{{guideFooterProgressSelectedColor}};
+    {{/if}}
+}
+
+#guide .toggle {
+    {{#if guideButtonBackgroundColor}}
+    background-color:#{{guideButtonBackgroundColor}};
+    {{/if}}
+    {{#if guideButtonTextColor}}
+    color:#{{guideButtonTextColor}};
+    {{/if}}
+}
+    
+.no-touch #guide .toggle:hover {
+    {{#if guideButtonBackgroundHoverColor}}
+    background-color:#{{guideButtonBackgroundHoverColor}};
+    {{/if}}
+    {{#if guideButtonTextHoverColor}}
+    color:#{{guideButtonTextHoverColor}};
+    {{/if}}
+}
+
+#tutor {
+    {{#if tutorBackgroundColor}}
+    background-color:#{{tutorBackgroundColor}};
+    {{/if}}
+}
+
+#tutor .pin {
+    {{#if tutorBackgroundColor}}
+    border-bottom-color:#{{tutorBackgroundColor}};
+    {{/if}}
+}
+
+#tutor .inner .title h6 {
+    {{#if tutorTitleTextSize}}
+    font-size:{{tutorTitleTextSize}}px;
+    {{/if}}
+    {{#if tutorTextColor}}
+    color:#{{tutorTextColor}};
+    {{/if}}
+}
+
+#tutor .inner .body p {
+    {{#if tutorBodyTextSize}}
+    font-size:{{tutorBodyTextSize}}px;
+    {{/if}}
+    {{#if tutorTextColor}}
+    color:#{{tutorTextColor}};
+    {{/if}}
+}
+
+#tutor .done {
+    {{#if tutorIconColor}}
+    color:#{{tutorIconColor}};
+    {{/if}}
+}
+
+.no-touch #tutor .done:hover,
+.no-touch #tutor .done:focus {
+    {{#if tutorIconHoverColor}}
+    color:#{{tutorIconHoverColor}};
+    {{/if}}
+}
+
+#inbox {
+    {{#if messagesToolbarBackgroundColor}}
+    border-right-color:#{{messagesToolbarBackgroundColor}};
+    {{/if}}
+}
+
+#inbox > .inner > .toolbar, #inbox .message .pop-out {
+    {{#if messagesToolbarBackgroundColor}}
+    background-color:#{{messagesToolbarBackgroundColor}};
+    {{/if}}
+}
+    
+#inbox .message .pop-out .pin {
+    {{#if messagesToolbarBackgroundColor}}
+    border-right-color:#{{messagesToolbarBackgroundColor}};
+    {{/if}}
+}
+
+#inbox > .inner > .toolbar .title h6,  #inbox .message .pop-out .title h6, #inbox .message .pop-out .body p {
+    {{#if messagesToolbarTextColor}}
+    color:#{{messagesToolbarTextColor}};
+    {{/if}}
+}
+
+#inbox .toolbar .done {
+    {{#if messagesToolbarIconColor}}
+    color:#{{messagesToolbarIconColor}};
+    {{/if}}
+}   
+
+.no-touch #inbox .toolbar .done:hover {
+    {{#if messagesToolbarIconHoverColor}}
+    color:#{{messagesToolbarIconHoverColor}};
+    {{/if}}
+}
+    
+#inbox .messages .divide {
+    {{#if messagesDivideBackgroundColor}}
+    background-color:#{{messagesDivideBackgroundColor}};
+    {{/if}}    
+}
+    
+#inbox .messages .divide h6 {
+    {{#if messagesDivideTextColor}}
+    color:#{{messagesDivideTextColor}};
+    {{/if}}    
+}
+    
+#inbox .messages .message, #inbox .messages .placeholder {
+    {{#if messagesMessageBackgroundColor}}
+    background-color:#{{messagesMessageBackgroundColor}}; 
+    {{/if}}
+}
+    
+#inbox .messages .message .preview h6, #inbox .messages .message .preview p, #inbox .messages .placeholder h6  {
+    color:#{{messagesMessageTextColor}};
+}
+    
+#inbox .messages .message .preview.unread-message {
+    {{#if messagesMessageUnreadBackgroundColor}}
+    background-color:#{{messagesMessageUnreadBackgroundColor}}; 
+    {{/if}}
+}
+    
+#inbox .messages .message .unread-message.preview h6, #inbox .messages .message .unread-message.preview p {
+    {{#if messagesMessageUnreadTextColor}}
+    color:#{{messagesMessageUnreadTextColor}};
+    {{/if}}
+}
+
+@media (min-width: 900px) { 
+    {{#if smartComponentSpacing}}
+    .component.left > .inner {
+        margin-right: {{smartComponentSpacing}};
+    }
+    .component.right > .inner {
+        margin-left: {{smartComponentSpacing}};
+    }
+    {{/if}}
+}

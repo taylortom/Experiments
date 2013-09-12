@@ -1,0 +1,38 @@
+<screen type="VerticalSlidingTabs" id="m05_t05_020" layout="">
+   <title>{{text}}</title>
+   <initialText>{{text}}</initialText>
+   <initialInstruction>{{text}}</initialInstruction>
+   <audio filename="initial.mp3" />
+   <graphic filename="textandgraphic_fullscreen.swf" />
+   <tabs>
+      <tab id="1">
+         <title>{{text}}</title>
+         <columns>
+            <column id="1">
+               <displayText audio="">{{text}}</displayText>
+               <graphic filename="" />
+            </column>
+            <column id="2">
+               <displayText audio="">{{text}}</displayText>
+               <graphic filename="" />
+            </column>
+         </columns>
+      </tab>
+      <tab id="2">
+         <title><![CDATA[Tab 2]]></title>
+         <columns>
+            <column id="1">
+               <displayText audio="">{{text}}</displayText>
+               <graphic filename="" />
+            </column>
+            <column id="2">
+               <displayText audio="" />
+               <graphic filename="tabbed_sliding.swf" />
+            </column>
+        </columns>
+       </tab>
+   </tabs>
+   <finalInstruction audio="[COMMON]/final_instruction.mp3">{{text}}</finalInstruction>
+   <transcript />
+   <extras />
+</screen>

@@ -1,0 +1,91 @@
+<div class="inner">
+    {{#if title}}
+    <div class="title">
+        <h4 class="inner">
+            {{{title}}}
+        </h4>
+    </div>
+    {{/if}}
+    {{#if body}}
+    <div class="body">
+        <p class="inner">
+            {{{body}}}
+        </p>
+    </div>
+    {{/if}}
+    <div class="widget {{#if complete}}complete {{#if correct}}correct{{else}}mine{{/if}} {{/if}}">
+        {{#if complete}}
+            {{#each items}}
+            <div class="item {{#if correct}}correct{{else}}incorrect{{/if}} item-{{@index}}">
+                <p>{{text}}</p>
+                <div class="select">
+                    <select disabled="true">
+                        <option>{{../placeholder}}</option>
+                        {{#each options}}
+                        <option {{#if selected}}selected="selected"{{/if}}>{{text}}</option>
+                        {{/each}}
+                    </select>
+                    <div class="state">
+                        <div class="icon dropdown"></div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        {{else}}
+            {{#each items}}
+            <div class="item item-{{@index}}">
+                <p>{{text}}</p>
+                <div class="select">
+                    <div class="state">
+                        <div class="icon dropdown"></div>
+                    </div>
+                    <select>
+                        <option selected="selected">{{../placeholder}}</option>
+                        {{#each options}}
+                        <option>{{text}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+            </div>
+            {{/each}}
+        {{/if}}
+        {{#unless complete}}
+        <a href="#" class="button submit">
+            <h6>
+                {{#if button.submit}}    
+                    {{{button.submit}}} 
+                {{else}}
+                    Submit
+                {{/if}}
+            </h6>
+        </a>
+        <a href="#" class="button reset">
+            <h6>
+                {{#if button.reset}}    
+                    {{{button.reset}}} 
+                {{else}}
+                    Reset
+                {{/if}}
+            </h6>
+        </a> 
+        {{/unless}}
+        <a href="#" class="button model">
+            <h6>
+                {{#if button.model}}    
+                    {{{button.model}}} 
+                {{else}}
+                    Model Answer
+                {{/if}}
+            </h6>
+        </a>
+        <a href="#" class="button mine">
+            <h6>
+                {{#if button.mine}}    
+                    {{{button.mine}}} 
+                {{else}}
+                    My Answer
+                {{/if}}
+            </h6>
+        </a>
+    </div>
+</div>

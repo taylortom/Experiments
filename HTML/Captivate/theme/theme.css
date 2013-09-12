@@ -1,0 +1,908 @@
+body, p, select, input, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+body {
+    
+    background-color:#e2e2e2;
+    
+}
+
+#navigation {
+    
+    background-color:#8fc344;
+    
+    border-bottom: 1px solid #b4d459;
+}
+
+#wrapper {
+    
+    background-color:#d9e8a3;
+    
+}
+
+#page > .inner {
+    padding-top:20px;
+    padding-right:0px;
+    padding-bottom:20px;
+    padding-left:0px;
+}
+
+#page > .inner > .title > .inner {
+    padding-top:;
+    padding-right:20px;
+    padding-bottom:;
+    padding-left:20px;
+}
+
+.article {
+    
+    background-color:#ffffff;
+    
+    margin-top:20px;
+}
+
+.article > .inner {
+    padding-top:20px;
+    padding-right:20px;
+    padding-bottom:20px;
+    padding-left:20px;
+}
+
+.article > .inner > .title > .inner {
+    padding-top:;
+    padding-right:;
+    padding-bottom:;
+    padding-left:;
+}
+
+.block {
+    
+    background-color:transparent;
+    
+    margin-top:;
+}
+
+.block > .inner {
+    padding-top:;
+    padding-right:;
+    padding-bottom:;
+    padding-left:;
+}
+
+.block > .inner > .title > .inner {
+    padding-top:;
+    padding-right:;
+    padding-bottom:;
+    padding-left:;
+}
+
+.component {
+    
+    background-color:transparent;
+    
+    margin-top: ;
+}
+
+body, p {
+    color: #666666;
+}
+
+a, a:visited, .component.narrative .strapline .controls .icon, .component.mcq .widget .item label {
+    color: #ffffff;
+}
+
+.no-touch a:hover, .no-touch .component.accordion .item .title:hover {
+    color: #666666;
+}
+
+h1 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333333;
+}
+
+h3 {
+    font-size: 15px;
+    color: #333333;
+}
+
+h4 {
+    font-size: 15px;
+    color: #333333;
+}
+
+.component.text {
+    
+}
+
+.component.text .title h4 {
+    
+    
+}
+
+.component.graphic {
+    
+}
+
+.component.graphic .title h4 {
+    
+    
+}
+
+.component.media {
+    
+}
+
+.component.media .title h4 {
+    
+    
+}
+
+.component.narrative {
+    
+}
+
+.component.narrative .title h4 {
+    
+    
+}
+
+.component.narrative .slide .controls {
+    
+    background-color:#8fc344;
+    
+}
+
+.component.narrative .slide .controls .icon {
+    
+    color:#ffffff;
+    
+}
+
+.no-touch .component.narrative .slide .controls .icon:hover {
+    
+    color:#666666;
+    
+}
+
+.component.narrative .strapline .controls .icon {
+    
+    color:#ffffff;
+    
+}
+
+.no-touch .component.narrative .strapline .controls .icon:hover {
+    
+    color:#e2e2e2;
+    
+}
+
+.component.narrative .strapline {
+    
+    background-color:#333333;
+    
+    
+    color:#ffffff;
+    
+}
+
+.component.narrative .strapline {
+    
+    background-color:#333333;
+    
+    
+    color:#ffffff;
+    
+}
+
+.component.narrative .popup > .inner {
+    
+    background-color:#ffffff;
+    
+}
+
+.component.narrative .popup > .inner .content p {
+    
+    color:#333333;
+    
+}
+
+.component.narrative .popup > .inner .toolbar .title h5 {
+    
+    color:#333333;
+    
+}
+
+.component.narrative .popup .close {
+    
+    color:#333333;
+    
+}
+
+.no-touch .component.narrative .popup .close:hover {
+    
+    color:#666666;
+    
+}
+
+.component.hotgraphic {
+    
+}
+
+.component.hotgraphic .title h4 {
+    
+    
+}
+
+.component.hotgraphic .widget .graphic .item {
+    
+    color:#90c445;
+    
+}
+
+.no-touch .component.hotgraphic .widget .graphic .item:hover {
+    
+    color:#b4d459;
+    
+}
+
+.component.hotgraphic .widget .graphic .item .icon {
+    
+}
+
+.component.hotgraphic.desktop .popup {
+    
+    background-color:#ffffff;
+    
+    
+    border-color:#ffffff;
+    
+}
+
+.component.hotgraphic.desktop .popup .toolbar {
+    
+    background-color:#8fc344;
+    
+}
+
+.component.hotgraphic .toolbar .controls, .component.hotgraphic .toolbar .done {
+    
+    color:#ffffff;
+    
+}
+
+.no-touch .component.hotgraphic .toolbar .controls:hover, .no-touch .component.hotgraphic .toolbar .done:hover {
+    
+    color:#e2e2e2;
+    
+}
+
+.component.hotgraphic.desktop .popup .toolbar .count {
+    
+    color:#ffffff;
+    
+}
+
+.component.hotgraphic .popup h5, .component.hotgraphic .popup p {
+    
+    color:#333333;
+    
+}
+
+.component.hotgraphic.desktop .popup > .inner {
+    
+    padding:20px;
+    
+}
+
+.component.hotgraphic.desktop .popup .content .graphic .inner {
+    
+    padding-left:10px;
+    
+}
+
+.component.hotgraphic.desktop .popup .content .body .inner {
+    
+    padding-right:10px;
+    
+}
+        
+.component.accordion {
+    
+}
+
+.component.accordion .title h4 {
+    
+    
+    color:#333333;
+    
+}
+
+.component.accordion .widget .item .title {
+    
+    color:#ffffff;
+    
+}
+
+.no-touch .component.accordion .widget .item .title:hover {
+    
+    color:#ffffff;
+    
+}
+
+.component.accordion .widget .item .title.visited, .no-touch .component.accordion .widget .item .title.visited:hover {
+    
+    color:#ffffff;
+    
+}
+
+.component.accordion .widget .item .title {
+    
+    background-color:#8fc344;
+    
+}
+
+.no-touch .component.accordion .widget .item .title:hover {
+    
+    background-color:#b4d459;
+    
+}
+
+.component.accordion .widget .item .title.visited, .no-touch .component.accordion .widget .item .title.visited:hover {
+    
+    background-color:#c5c5c5;
+    
+}
+
+.component.accordion .widget .item .title .inner {
+    
+    color:#ffffff;
+    
+}
+
+.no-touch .component.accordion .widget .item .title .inner:hover {
+    
+    color:#ffffff;
+    
+}
+
+.component.accordion .widget .item .title.visited .inner, .no-touch .component.accordion .widget .item .title.visited .inner:hover {
+    
+    color:#ffffff;
+    
+}
+
+.component.accordion .widget .item .body {
+    
+    background-color:#ffffff;
+    
+}
+
+.component.accordion .widget .item .body p {
+    
+    padding:20px;
+    
+    
+    color:#333333;
+    
+}
+
+.component.accordion .item {
+    margin-bottom:1px;
+    border-color:#c5c5c5;
+}
+
+.component.mcq {
+    
+}
+
+.component.mcq .title h4 {
+    
+    
+}
+
+.component.mcq .widget .item label {
+    
+    color:#ffffff;
+    
+    
+    background-color:#8fc344;
+    
+}
+
+.component.mcq .widget .item label:hover {
+    
+    color:#666666;
+    
+    
+    background-color:#b4d459;
+    
+}
+
+.component.mcq .widget .item label.selected {
+    
+    color:#ffffff;
+    
+    
+    background-color:#c5c5c5;
+    
+}
+
+/*.component.mcq .widget .item label {
+    background-color
+}*/
+
+.component.mcq .widget .item label h5 {
+    
+    color:#ffffff;
+    
+}
+
+.no-touch .component.mcq .widget .item label h5:hover  {
+    
+    color:#ffffff;
+    
+}
+
+.no-touch .component.mcq .widget.complete .item label h5:hover  {
+    
+    color:#ffffff;
+    
+}
+
+.component.mcq .widget .item label.selected h5, .no-touch .component.mcq .widget .item label.selected h5:hover{
+    
+    color:#ffffff;
+    
+}
+
+.no-touch .component.mcq .widget.complete .item label:hover {
+    
+    background-color:#8fc344;
+    
+    
+    color:#ffffff;
+    
+}
+
+.component.mcq .widget.complete .item label.selected, .no-touch .component.mcq .widget.complete .item label.selected:hover{
+    
+    background-color:#c5c5c5;
+    
+}
+
+.component.mcq .widget.complete.model .item label.selected, .no-touch .component.mcq .widget.complete.model .item label.selected:hover{
+    
+    background-color:#8fc344;
+    
+}
+
+.component.mcq .widget.complete.model .item.correct label, .no-touch .component.mcq .widget.complete.model .item.correct label:hover{
+    
+    background-color:#c5c5c5;
+    
+}
+
+.component.mcq .widget.complete.model .item label.selected h5, .no-touch .component.mcq .widget.complete.model .item label.selected h5:hover{
+    
+    color:#ffffff;
+    
+}
+
+.component.mcq .widget.complete .item.correct .selected .state {
+    
+    color:#5abd5e;
+    
+}
+
+.component.mcq .widget.complete .item.incorrect .selected .state {
+    
+    color:#db214f;
+    
+}
+
+.component.mcq .widget.complete.model .item.correct .state {
+    
+    color:#5abd5e;
+    
+}
+
+.component.mcq .widget.complete.model .item.incorrect .state {
+    
+    color:#db214f;
+    
+}
+
+.component.mcq .button.submit, .component.mcq .button.reset, .component.mcq .button.user, .component.mcq .button.model {
+    
+    background-color:#8fc344;
+    
+    
+    color:#ffffff;
+    
+}
+
+.no-touch .component.mcq .button.submit:hover, .no-touch .component.mcq .button.reset:hover, .no-touch .component.mcq .button.user:hover, .no-touch .component.mcq .button.model:hover {
+    
+    background-color:#b4d459;
+    
+    
+    color:#ffffff;
+    
+}
+
+.component.ppq {
+    
+}
+
+.component.ppq .title h4 {
+    
+    
+}
+
+.component.ppq .pinboard .marker {
+    
+    color:#8fc344;
+    
+}
+
+.no-touch .component.ppq .pinboard .marker:hover {
+    
+    color:#b4d459;
+    
+}
+
+.component.ppq .button.submit, .component.ppq .button.reset, .component.ppq .button.mine, .component.ppq .button.model {
+    
+    background-color:#8fc344;    
+    color:#ffffff;
+    
+}
+
+.no-touch .component.ppq .button.submit:hover, .no-touch .component.ppq .button.reset:hover, .no-touch .component.ppq .button.mine:hover, .no-touch .component.ppq .button.model:hover {
+    background-color:#b4d459; 
+    color:#ffffff;
+}
+
+.component.ppq .widget.mine .marker.icon.correct {
+    
+    color:#2ade78;
+    
+}
+
+.component.ppq .widget.mine .marker.icon {
+    
+    color:#d63232;
+    
+}
+
+
+/*.component.textinput .answers .inner input[type=text]:focus {
+    background-color:#d9e8a3;
+    border:2px solid #8fc344;
+    outline: none;
+}*/
+
+.component.textinput .button.submit, .component.textinput .button.reset, .component.textinput .button.mine, .component.textinput .button.model {
+    
+    background-color:#8fc344;    
+    color:#ffffff;
+}
+
+.no-touch .component.textinput .button.submit:hover, .no-touch .component.textinput .button.reset:hover, .no-touch .component.textinput .button.mine:hover, .no-touch .component.textinput .button.model:hover {
+    background-color:#b4d459; 
+}
+
+
+
+
+.component.slider .widget .holder {
+    height:80px;
+}
+
+.component.slider .widget .result {
+
+}
+    
+.component.slider .widget .slider.scale {
+    width: 80%;
+    height: 6px;
+    background-color: #CCC;
+    float: left;
+    position: relative;
+    border: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 20px;
+    margin:20px 5%;
+    top:15px
+    
+}
+
+.component.slider .widget .slider.handle {
+    display: block;
+    position: absolute;
+    height: 26px;
+    cursor: pointer;
+    width: 26px;
+    top: -30px;
+    border-radius: 50%;
+    margin-left: -13px;
+    background-color: #666;
+    color:#fff;
+    line-height:26px;
+    text-align:center;
+}
+
+.component.slider .widget .myanswermarker {
+    display: none;
+    position: absolute;
+    height: 26px;
+    cursor: pointer;
+    width: 26px;
+    top: -30px;
+    border-radius: 50%;
+    margin-left: -13px;
+    background-color: #666;
+    color:#fff;
+    line-height:26px;
+    text-align:center;
+}
+
+.component.slider .widget .model.answer {
+    display: none;
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    top: -30px;
+    border-radius: 50%;
+    margin-left: -13px;
+    background-color: #8fc344;
+    color:#fff;
+    line-height:26px;
+    text-align:center;
+}
+
+.component.slider .widget .onemodel.answer {
+    display: none;
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    top: -30px;
+    border-radius: 50%;
+    margin-left: -13px;
+    background-color: #8fc344;
+    color:#fff;
+    line-height:26px;
+    text-align:center;
+}
+
+.component.slider .widget .onemodel.label {
+    display: none;
+    position: absolute;
+    height: 26px;
+    width:100px;
+    padding:1px;
+    margin-left: -50px;
+    top:-42px;
+    background-color: #8fc344;
+    color:#fff;
+    line-height:26px;
+    text-align:center;
+}
+
+.component.slider .widget .myanswer.label {
+    display: none;
+    position: absolute;
+    height: 26px;
+    width:100px;
+    padding:1px;
+    margin-left: -50px;
+    top:18px;
+    background-color: #f6665c;
+    color:#fff;
+    line-height:26px;
+    text-align:center;
+}
+.component.slider .widget .rangeModel.label {
+    display: none;
+    position: absolute;
+    height: 26px;
+    width:100px;
+    padding:1px;
+    top:-42px;
+    background-color: #8fc344;
+    color:#fff;
+    line-height:26px;
+    text-align:center;
+}
+
+.component.slider .widget .button.submit {
+    border:1px solid #b9b9b9;
+    background-color:#8fc344;
+    color:#fff;
+    margin-top:10px;
+}
+
+.component.slider .widget .button.reset {
+    display:none;
+    border:1px solid #b9b9b9;
+    background-color:#8fc344;
+    color:#fff;
+    margin-top:10px;
+}
+
+#guide {
+    background-color:#fff;
+}
+
+#guide .item .title h6 {
+    
+    
+    color:#333333;
+    
+}
+
+#guide .item .body p {
+    
+    
+    color:#333333;
+    
+}
+
+#guide .left, #guide .right, #guide .done {
+    
+    color:#333333;
+    
+}
+
+.no-touch #guide .left:hover, .no-touch #guide .right:hover, .no-touch #guide .done:hover {
+    
+    color:#666666;
+    
+}
+
+#guide .footer {
+    
+    background-color:#666666;
+    
+}
+
+#guide .footer .indicators .progress {
+    
+    background-color:#ffffff;
+    
+}
+
+#guide .footer .indicators .progress.selected {
+    
+    background-color:#333333;
+    
+}
+
+#guide .toggle {
+    
+    background-color:#333333;
+    
+    
+    color:#ffffff;
+    
+}
+    
+.no-touch #guide .toggle:hover {
+    
+    background-color:#666666;
+    
+    
+    color:#ffffff;
+    
+}
+
+#tutor {
+    
+    background-color:#70756f;
+    
+}
+
+#tutor .pin {
+    
+    border-bottom-color:#70756f;
+    
+}
+
+#tutor .inner .title h6 {
+    
+    font-size:19px;
+    
+    
+    color:#333333;
+    
+}
+
+#tutor .inner .body p {
+    
+    font-size:13px;
+    
+    
+    color:#333333;
+    
+}
+
+#tutor .done {
+    
+    color:#333333;
+    
+}
+
+.no-touch #tutor .done:hover {
+    
+    color:#666666;
+    
+}
+
+#inbox {
+    
+}
+
+#inbox > .inner > .toolbar, #inbox .message .pop-out {
+    
+}
+    
+#inbox .message .pop-out .pin {
+    
+}
+
+#inbox > .inner > .toolbar .title h6,  #inbox .message .pop-out .title h6, #inbox .message .pop-out .body p {
+    
+}
+
+#inbox .toolbar .done {
+    
+}   
+
+.no-touch #inbox .toolbar .done:hover {
+    
+}
+    
+#inbox .messages .divide {
+        
+}
+    
+#inbox .messages .divide h6 {
+        
+}
+    
+#inbox .messages .message, #inbox .messages .placeholder {
+    
+}
+    
+#inbox .messages .message .preview h6, #inbox .messages .message .preview p, #inbox .messages .placeholder h6  {
+    color:#;
+}
+    
+#inbox .messages .message .preview.unread-message {
+    
+}
+    
+#inbox .messages .message .unread-message.preview h6, #inbox .messages .message .unread-message.preview p {
+    
+}
+
+@media (min-width: 900px) { 
+    
+    .component.left > .inner {
+        margin-right: 20px;
+    }
+
+    .component.right > .inner {
+        margin-left: 20px;
+    }
+    
+}
+        

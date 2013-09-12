@@ -1,0 +1,37 @@
+<div class="inner">
+    {{#if title}}
+    <div class="title">
+        <h4 class="inner">
+            {{{title}}}
+        </h4>
+    </div>
+    {{/if}}
+    {{#if body}}
+    <div class="body">
+        <p class="inner">
+            {{{body}}}
+        </p>
+    </div>
+    {{/if}}
+    <div class="widget">
+    {{#if accessible}}
+        <div class="transcript">
+            <p>
+                {{transcript}}
+            </p>
+        </div>
+    {{else}}
+        <video controls poster="{{poster}}">
+            <source src="{{media.mp4}}"  type="video/mp4" />
+            <source src="{{media.ogv}}"  type="video/ogg" />
+            <source src="{{media.mp3}}"  type="audio/mpeg" />
+            <source src="{{media.ogg}}"  type="audio/ogg" />
+            <object type="application/x-shockwave-flash" data="player.swf">
+                <param name="movie" value="player.swf" />
+                <param name="wmode" value="transparent" />
+                <param name="flashvars" value="controlbar=over&amp;image={{poster}}&amp;file={{#if media.mp4}}{{media.mp4}}{{else}}{{media.mp3}}{{/if}}" />
+            </object>
+        </video>
+    {{/if}}
+    </div>
+</div>

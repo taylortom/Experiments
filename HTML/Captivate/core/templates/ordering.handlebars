@@ -1,0 +1,76 @@
+<div class="inner">
+    {{#if title}}
+    <div class="title">
+        <h4 class="inner">
+            {{{title}}}
+        </h4>
+    </div>
+    {{/if}}
+    {{#if body}}
+    <div class="body">
+        <p class="inner">
+            {{{body}}}
+        </p>
+    </div>
+    {{/if}}
+    <div class="widget {{#if complete}}complete{{#if correct}} correct{{else}} incorrect mine{{/if}}{{/if}}">
+        <div class="items">
+        {{#if complete}}
+            {{#each items}}
+            <div class="item {{#if correct}}correct{{else}}incorrect{{/if}} item-{{@index}}">
+                <div class="label">
+                    <div class="state">
+                        <div class="icon"></div>
+                    </div>
+                    <h5 class="inner">
+                        {{{title}}}
+                    </h5>
+                </div>
+                <div class="spinner-container">
+                    <div class="input-spinner">
+                    {{index}}
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        {{else}}
+            {{#each items}}
+            <div class="item item-{{@index}}">
+                <div class="label">
+                    <div class="state">
+                        <div class="icon"></div>
+                    </div>
+                    <h5 class="inner">
+                        {{{title}}}
+                    </h5>
+                </div>                    
+                <div class="spinner-container">
+                    <div class="input-spinner">-</div>
+                    <a href="#" class="up spinner">
+                        <div class="icon up"></div>
+                    </a>
+                    <a href="#" class="down spinner">
+                        <div class="icon down"></div>
+                    </a>
+                </div>
+            </div>
+            {{/each}}
+        {{/if}}
+        </div>
+        <a href="#" class="button model">
+        {{{button.model}}}
+        </a>
+        <a href="#" class="button mine">
+        {{{button.mine}}}
+        </a>
+        <a href="#" class="button preview">
+        {{{button.preview}}}
+        </a>
+        <a href="#" class="button submit">
+        {{{button.submit}}}
+        </a>
+        <a href="#" class="button reset">
+        {{{button.reset}}}
+        </a>
+    </div>
+</div>

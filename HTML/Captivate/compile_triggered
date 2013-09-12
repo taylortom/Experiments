@@ -1,0 +1,5 @@
+TEMP_DIR=${PWD}/triggered
+
+printf "Attempting to compile templates in:\n$TEMP_DIR...\n"
+handlebars $TEMP_DIR/*.handlebars -f $TEMP_DIR/templates.js
+printf "Files successfully compiled."

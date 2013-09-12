@@ -1,0 +1,23 @@
+<div class="inner">
+    {{#if title}}
+    <div class="title">
+        <h4>{{{title}}}</h4>
+    </div>
+    {{/if}}
+    {{#if body}}
+    <div class="body">
+        <p>{{{body}}}</p>
+    </div>
+    {{/if}}
+    <div class="widget">
+        <div class="graphic">
+            <img src="{{graphic.src}}" alt="{{graphic.alt}}" title="{{graphic.title}}"/>
+            <div class="text">{{graphic.body}}</div>
+        </div>
+        <div class="reveal">
+            <img src="{{reveal.src}}" alt="{{reveal.alt}}" title="{{reveal.title}}"/>
+            <div class="text">{{reveal.body}}</div>
+        </div>
+        <a href="#" class="handle" alt="{{handle.alt}}" title="{{handle.title}}"><div class="icon drag"></div>{{handle.text}}</a>
+    </div>
+</div>

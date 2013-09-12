@@ -1,0 +1,82 @@
+<div class="inner">
+    {{#if title}}
+    <div class="title">
+        <h4 class="inner">
+            {{{title}}}
+        </h4>
+    </div>
+    {{/if}}
+    {{#if body}}
+    <div class="body">
+        <p class="inner">
+            {{{body}}}
+        </p>
+    </div>
+    {{/if}}
+    <div class="widget clearfix {{#if complete}} complete {{#unless correct}} mine {{/unless}} {{/if}} ">
+        <div class="instructions">
+            <div class="inner">
+                <div class="title">
+                    <h5 class="title">
+                        {{widget.title}}
+                    </h5>
+                </div>
+                <div class="body">
+                    <p class="inner">
+                        {{{widget.body}}}
+                    </p>
+                </div>
+                <a href="#" class="button submit">
+                    <h6>
+                        {{#if button.submit}}    
+                            {{{button.submit}}} 
+                        {{else}}
+                            Submit
+                        {{/if}}
+                    </h6>
+                </a>
+                <a href="#" class="button model">
+                    <h6>
+                        {{#if button.model}}    
+                            {{{button.model}}} 
+                        {{else}}
+                            Model Answer
+                        {{/if}}
+                    </h6>
+                </a>
+                <a href="#" class="button reset">
+                    <h6>
+                        {{#if button.reset}}    
+                            {{{button.reset}}} 
+                        {{else}}
+                            Reset
+                        {{/if}}
+                    </h6>
+                </a> 
+                <a href="#" class="button mine">
+                    <h6>
+                        {{#if button.mine}}    
+                            {{{button.mine}}} 
+                        {{else}}
+                            My Answer
+                        {{/if}}
+                    </h6>
+                </a>
+            </div>
+        </div>
+        <div class="pinboard">
+            <div class="inner">
+                <img src="{{graphic.src}}" alt="{{graphic.alt}}" title="{{graphic.title}}" draggable="false"/>
+                {{#if complete}}
+                    {{#each items}}
+                        <div class="marker icon pin in-use {{#if correct}}correct{{/if}}"></div>
+                    {{/each}}
+                {{else}}
+                    {{#each items}}
+                        <div class="marker icon pin"></div>
+                    {{/each}}
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div id="blockview">
+    <div class="inner">
+        <div class="nav-holder">
+            <div class="active dot"></div>
+            {{#each attributes.pages.models}}
+            <div class="dot-holder">
+                <div class="inner">
+                    {{#eachBlock}}
+                        <div class="dot"></div>
+                    {{/eachBlock}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="buttons">
+            <div class="prev end">previous</div>
+            <div class="next">next</div>
+        </div>
+    </div>
+</div>

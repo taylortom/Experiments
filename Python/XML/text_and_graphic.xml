@@ -1,0 +1,10 @@
+<screen type="TextAndGraphic" id="" layout="">
+	<title>{{text}}</title>
+	<initialText audio="">{{text}}</initialText>
+	<audio filename="" />
+	<graphic filename="" />
+	<bodyText>{{text}}</bodyText>
+	<finalInstruction audio="">{{text}}</finalInstruction>
+	<transcript>{{text}}</transcript>
+	<extras />
+</screen>

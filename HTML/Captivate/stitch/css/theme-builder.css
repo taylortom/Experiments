@@ -1,0 +1,128 @@
+#stitch {
+    position:fixed;
+    top:0px;
+    right:-296px;
+    width:320px;
+    background-color:#232323;
+    color:#fff;
+    z-index:500;
+    height: 24px;
+    overflow:hidden;
+    overflow-y: auto;
+    border-left:1px dashed #d2d2d2;
+}
+
+#stitch .stitch {
+    position:relative;
+    cursor:pointer;
+}
+
+#stitch > .inner {
+    padding:10px;
+    color:#454545;
+}
+
+#stitch > .title{
+    padding:10px;
+    font-size:21px;
+    cursor:pointer;
+}
+
+#stitch > .title:hover{
+    color:#d2d2d2;
+}
+
+#stitch .collapse {
+    display:none;
+}
+
+#stitch .collapse .item .title {
+    margin-bottom:4px;
+    width:45%;
+    display:inline-block;
+}
+
+#stitch .collapse input[type="text"] {
+    padding:4px;
+    width:45%;
+    display:inline-block;
+}
+
+#stitch .collapse input[type="number"] {
+    padding:4px;
+    width:45%;
+    display:inline-block;
+}
+
+#stitch .collapse select {
+    padding:4px;
+    width:49%;
+    display:inline-block;
+}
+
+#stitch .expand > .title {
+    padding:6px 13px;
+    cursor:pointer;
+}
+
+#stitch .expand > .title:hover {
+    background-color:#d8d8d8;
+}
+
+#stitch .expand > .title.selected {
+    background-color: #d8d8d8;
+}
+    
+#stitch .expand {
+    position:relative;
+    background-color:#f2f2f2;
+    margin-bottom:4px;
+    display:none;
+}
+
+#stitch .expand .plus {
+    position:absolute;
+    top: 3px;
+    right: 4px;
+}
+
+#stitch .item {
+    padding: 8px;
+    border-top: 1px dashed #d2d2d2;
+}
+
+#stitch .save {
+    background-color: rgb(226,78,62);
+    display: block;
+    padding: 18px;
+    text-align: center;
+    color: #fff;
+    font-size: 21px;
+    border-radius:2px;
+}
+
+#stitch .save:hover {
+    background-color: rgb(206,58,42);
+    display: block;
+    padding: 18px;
+    text-align: center;
+    color: #fff;
+    font-size: 21px;
+}
+
+@media all and (max-width: 699px) {
+    #stitch {
+    }
+    #stitch .stitch {
+        position: relative;
+        cursor: pointer;
+    }
+    /*#wrapper {
+        margin-left:0px;
+        width:320px;
+    }
+    
+    #navigation {
+        width:320px;
+    }*/
+}

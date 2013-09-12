@@ -1,0 +1,40 @@
+<div class="inner">
+        <div class="toolbar">
+            <div class="title">
+                <h6 class="inner">Messages</h6>
+            </div>
+            <a href="#" class="done">
+                <div class="icon close"></div>
+            </a>
+            <div class="options">
+                <a href="#" class="all">All</a>
+                <a href="#" class="unread">Unread</a>
+                <a href="#" class="favourites">Favourites</a>
+            </div>
+        </div>
+        <div class="messages">
+            <div class="inner">
+                {{#each models}}
+                <div class="inbox-page {{attributes.module}}{{attributes.topic}}{{attributes.page}}">
+                    <div class="divide">
+                        <h6 class="inner">{{attributes.title}}</h6>
+                    </div>
+                    <div class="page-messages empty">
+
+                        <div class="placeholder">
+                            <div class="inner">
+                                <div class="title">
+                                    <h6 class="inner">No Messages Yet</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+                
+        </div>
+        <div class="footer">
+        </div>
+    </div>

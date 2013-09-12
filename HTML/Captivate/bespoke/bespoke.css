@@ -1,0 +1,43 @@
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+@media all and (min-width:900px) {
+
+
+/*End MediaQ*/
+}
+
+@media all and (max-width:899px) and (min-width:700px) {
+            
+/*End MediaQ*/		
+}
+
+@media all and (max-width:699px) and (min-width:440px) {
+    
+/*End MediaQ*/   
+}
+
+@media all and (max-width: 439px) {
+          
+/*End MediaQ*/		
+}
+
+@media all and (orientation: portrait) {
+		
+		
+/*End MediaQ*/	
+}
+
+@media all and (orientation: landscape) {
+		
+		
+/*End MediaQ*/	
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+		
+		
+/*End MediaQ*/
+}

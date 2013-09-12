@@ -1,0 +1,382 @@
+/*///////////////////////
+	ICON SETUP
+///////////////////////*/
+
+@font-face {
+	font-family: 'base-icons';
+	src:url('base-icons.eot');
+	src:url('base-icons.eot?#iefix') format('embedded-opentype'),
+		url('base-icons.woff') format('woff'),
+		url('base-icons.ttf') format('truetype'),
+		url('base-icons.svg#base-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"]:before {
+*/
+
+.icon {
+    display:block;
+    width:24px;
+    height:24px;
+    font-size:24px;
+    background-image:url('adapt-sprite-sheet-24.png');
+    background-repeat:no-repeat;
+}
+
+.icon.menu {
+    background-position:0px 0px;
+}
+
+.no-touch .icon.menu:hover {
+    background-position:-48px 0px;
+}
+
+.icon.tools {
+    background-position:-96px 0px;
+}
+
+.no-touch .icon.tools:hover {
+    background-position:-144px 0px;
+}
+
+.icon.play {
+    background-position:-384px 0px;
+}
+
+.no-touch .icon.play:hover {
+    background-position:-432px 0px;
+}
+
+.icon.pause {
+    background-position:-480px 0px;
+}
+
+.no-touch .icon.pause:hover {
+    background-position:-528px 0px;
+}
+
+.icon.plus {
+    background-position:0px -48px;
+}
+
+.icon.tutor {
+    background-position:-864px 0px;
+}
+
+.icon.close {
+background-position:-768px 0px;
+}
+
+.no-touch .done:hover .icon.close {
+    background-position:-816px 0px;
+}
+
+.accordion .item .icon.plus {
+    background-position:0px -48px;
+}
+
+.no-touch .accordion .item a:hover .icon.plus {
+    background-position:0px -96px;
+}
+
+.accordion .item a.selected .icon.minus {
+    background-position:0px -144px;
+}
+
+.no-touch .accordion .item a.selected:hover .icon.minus {
+    background-position:0px -192px;
+}
+
+.narrative a.controls .icon.arrow-r {
+    background-position:-48px -48px;
+}
+
+.no-touch .narrative a.controls:hover .icon.arrow-r {
+    background-position:-48px -96px;
+}
+
+.narrative a.controls .icon.arrow-l {
+    background-position:-48px -144px;
+}
+
+.no-touch .narrative a.controls:hover .icon.arrow-l {
+    background-position:-48px -192px;
+}
+
+.narrative a.controls .icon.plus {
+    background-position:-672px 0px;
+}
+
+.no-touch .narrative a.controls:hover .icon.plus {
+    background-position:-720px 0px;
+}
+
+.narrative .popup .close .icon.close {
+    background-position:-48px -240px;
+}
+
+.no-touch .narrative .popup .close:hover .icon.close {
+    background-position:-48px -288px;
+}
+
+.hotgraphic a.item .icon.pin {
+    background-position:-96px -48px;
+}
+
+.no-touch .hotgraphic a.item:hover .icon.pin {
+    background-position:-96px -96px;
+}
+
+.hotgraphic a.item.visited .icon.pin {
+    background-position:-96px -144px;
+}
+
+.no-touch .hotgraphic a.item.visited:hover .icon.pin {
+    background-position:-96px -96px;
+}
+
+.hotgraphic a.controls .icon.arrow-r {
+    background-position:-96px -192px;
+}
+
+.no-touch .hotgraphic a.controls:hover .icon.arrow-r {
+    background-position:-96px -240px;
+}
+
+.hotgraphic a.controls .icon.arrow-l {
+    background-position:-96px -288px;
+}
+
+.no-touch .hotgraphic a.controls:hover .icon.arrow-l {
+    background-position:-96px -336px;
+}
+
+.hotgraphic a.done .icon.close {
+    background-position:-768px 0px;
+}
+
+.no-touch .hotgraphic a.done:hover .icon.close {
+    background-position:-816px 0px;
+}
+
+.reveal .handle .icon.drag {
+    background-position:-144px -48px;
+}
+
+.no-touch .reveal .handle:hover .icon.drag {
+    background-position:-144px -96px;
+}
+
+.mcq .item .state .icon.radio {
+    background-position:-192px -48px;
+}
+
+.no-touch .mcq .item label:hover .state .icon.radio {
+    background-position:-192px -96px;
+}
+
+.mcq .item .selected .state .icon.radio {
+    background-position:-192px -144px;
+}
+
+.no-touch .mcq .item label.selected:hover .state .icon.radio {
+    background-position:-192px -192px;
+}
+
+.mcq .user .item.correct .selected .state .icon.radio {
+    background-position:-576px 0px;
+}
+
+.mcq .user .item.incorrect .selected .state .icon.radio {
+    background-position:-624px 0px;
+}
+
+.mcq .complete.model .item.correct label .state .icon.radio, .mcq .complete.model .item.correct label.selected:hover .state .icon.radio {
+    background-position:-576px 0px;
+}
+
+.mcq .complete.model .item.incorrect label .state .icon.radio, .mcq .complete.model .item.incorrect label.selected:hover .state .icon.radio {
+    background-position:-624px 0px;
+}
+
+.no-touch .mcq .user .item label:hover .state .icon.radio {
+    background-position:-192px -48px;
+}
+
+.ppq .pinboard .marker.icon.pin {
+    background-position:-240px -48px;
+}
+
+.no-touch .ppq .pinboard .marker.icon.pin:hover {
+    background-position:-240px -96px;
+}
+
+.ppq .mine .pinboard .correct.marker.icon, .ppq .model .pinboard .marker.icon {
+    background-position:-576px 0px;
+}
+
+.ppq .mine .pinboard .cross.marker.icon {
+    background-position:-624px 0px;
+}
+
+.textinput .icon.correct {
+    background-position:-576px 0px;
+}
+
+.textinput .icon.incorrect {
+    background-position:-624px 0px;
+}
+
+.matching .icon.dropdown {
+    background-position:-336px -48px;
+}
+
+.no-touch .matching .select:hover .icon.dropdown {
+    background-position:-336px -96px;
+}
+
+.matching .complete .correct .state .icon.dropdown {
+    background-position:-576px 0px;
+}
+
+.matching .complete .incorrect .state .icon.dropdown {
+    background-position:-624px 0px;
+}
+
+.matching .model.complete .item .select .state .icon.dropdown {
+    background-position:-576px 0px;
+}
+
+.slider .icon.tick {
+    background-position:-576px 0px;
+}
+
+.slider .icon.cross {
+    background-position:-624px 0px;
+}
+
+.ordering a.spinner .icon.up {
+    background-position:-288px -48px;
+}
+
+.no-touch .ordering a.spinner:hover .icon.up {
+    background-position:-288px -96px;
+}
+
+.ordering a.spinner .icon.down {
+    background-position:-288px -144px;
+}
+
+.no-touch .ordering a.spinner:hover .icon.down {
+    background-position:-288px -192px;
+}
+
+.ordering .label .state .icon {
+    background-position:48px 48px;
+}
+
+.ordering .label .state .icon {
+    background-position:48px 48px;
+}
+
+.ordering .widget .correct .label .state .icon {
+    background-position:-576px 0px;
+}
+
+.ordering .widget .incorrect .label .state .icon {
+    background-position:-624px 0px;
+}
+
+.ordering .widget.model .label .state .icon {
+    background-position:-576px 0px;
+}
+
+.gmcq .state .icon.radio {
+    background-position: -192px -48px;
+}
+
+.no-touch .gmcq label:hover .state .icon.radio {
+    background-position:-384px -96px;
+}
+
+.gmcq label.selected .state .icon.radio {
+    background-position:-384px -144px;
+}
+
+.no-touch .gmcq label.selected:hover .state .icon.radio {
+    background-position:-384px -192px;
+}
+
+.gmcq .mine .item.correct label.selected .state .icon.radio {
+    background-position:-576px 0px;
+}
+
+.gmcq .mine .item.incorrect label.selected .state .icon.radio {
+    background-position:-624px 0px;
+}
+
+.gmcq .model .item.correct label .state .icon.radio {
+    background-position:-576px 0px;
+}
+
+.gmcq .model .item.incorrect label .state .icon.radio {
+    background-position:-624px 0px;
+}
+
+.block-slider-controls .right .icon {
+    background-position:-816px -48px;
+}
+
+.no-touch .block-slider-controls .right:hover .icon {
+    background-position:-816px -96px;
+}
+
+.block-slider-controls .left .icon {
+    background-position:-816px -144px;
+}
+
+.no-touch .block-slider-controls .left:hover .icon {
+    background-position:-816px -192px;
+}
+
+#tools .search.icon {
+    background-position:-192px 0px;
+}
+
+.no-touch #tools .search.icon:hover {
+    background-position:-240px 0px;
+}
+
+#tools .resources.icon {
+    background-position:-288px 0px;
+}
+
+.no-touch #tools a.resources:hover .resources.icon {
+    background-position:-336px 0px;
+}
+
+#tools .settings.icon {
+    background-position:-864px -48px;
+}
+
+.no-touch #tools a.settings:hover .settings.icon {
+    background-position:-864px -96px;
+}
+
+#tools .guide.icon {
+    background-position:-864px -144px;
+}
+
+.no-touch #tools a.guide:hover .guide.icon {
+    background-position:-864px -192px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+}

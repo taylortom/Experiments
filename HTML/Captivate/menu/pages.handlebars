@@ -1,0 +1,20 @@
+<div class="items">
+    {{#each pages}}
+    <div class="item {{#if complete}}complete{{else}}{{#if visited}}visited {{/if}}incomplete{{/if}}">
+        {{#if graphic}}
+        <img src="{{graphic.src}}" alt="{{graphic.alt}}" title="{{graphic.title}}"/>
+        {{/if}}
+        <a href="#/{{route}}"  id="{{id}}" class="inner">
+            <h1 class="title">
+                {{{title}}}
+            </h1>
+            <p class="body">
+                {{{body}}}
+            </p>
+        </a>
+        <div class="status">
+            <span class="text">Status</span><span class="icon complete-{{complete}}"></span>
+        </div>
+    </div>
+    {{/each}}
+</div>

@@ -1,0 +1,121 @@
+{
+    "title":"Adapt",
+    "version":"3.1.4",
+    "navigation":{
+        "settings":true,
+        "search":true,
+        "accessibility":true,
+        "resources":true   
+    },
+    "guide":{
+        "buttons":{
+            "core":"core button text",
+            "components":"component button text"
+        },
+        "items":[ ]
+    },
+    "modules":[
+        {
+            "id":"m05",
+            "title":"Standard Functionality",
+            "body":"The module description sits here.",
+            "graphic":{
+                "src":"course/assets/m05/t05/p101/menu-5.jpg",
+                "alt":"alt text",
+                "title":"title text"
+            },
+            "topics":[
+                {
+                    "id":"m05-t05",
+                    "title":"Adapt Components",
+                    "body":"The topic description sits here.",
+                    "graphic":{
+                        "src":"course/assets/m05/t05/p101/menu-5.jpg",
+                        "alt":"alt text",
+                        "title":"title text"
+                    },
+                    "pages":[
+                        {
+                            "id":"m05-t05-p05",
+                            "class":"",
+                            "title":"Presentation Components",
+                            "body":"Find out about the two presentation components.",
+                            "graphic":{
+                                "src":"course/assets/m05/t05/p101/menu-5.jpg",
+                                "alt":"alt text",
+                                "title":"title text"
+                            },
+                            "articles":[
+                                {
+                                    "id":"m05-t05-p05-a05",
+                                    "class":"",
+                                    "title":"Article 1",
+                                    "body":"This is optional Article body text.",
+                                    "assessment":true,
+                                    "mobile-hidden":true,
+                                    "blockSlider":{
+                                        "active":true,
+                                        "height":600,
+                                        "tabs":false,
+                                        "indicators":true,
+                                        "direction":"both",
+                                        "initial":1
+                                    },
+                                    "blocks":[
+                                        {
+                                            "id":"m05-t05-p05-a05-b05",
+                                            "class":"",
+                                            "title":"Block title 1",
+                                            "body":"This is optional BLOCK body text.",
+                                            "components":[
+                                                {
+                                                    "id":"m05-t05-p05-a05-b05-c05",
+                                                    "class":"",
+                                                    "layout":"right",
+                                                    "component":"captivate",
+                                                    "title":"Captivate",
+                                                    "body":"This is optional body text.",
+                                                    "captivate":{
+                                                        "src":"captivate.html",
+                                                        "title":"title text"
+                                                    },
+                                                    "button": {
+                                                        "open": "Open"
+                                                    }                                             
+												}
+                                            ]
+                                        },
+                                        {
+                                            "id":"m05-t05-p05-a05-b10",
+                                            "class":"",
+                                            "title":"Block title 2",
+                                            "body":"This is optional BLOCK body text.",
+                                            "components":[
+                                                {
+                                                    "id":"m05-t05-p05-a05-b05-c10",
+                                                    "class":"",
+                                                    "layout":"right",
+                                                    "component":"captivate",
+                                                    "title":"Captivate",
+                                                    "body":"This is optional COMPONENT body text.",
+                                                    "captivate":{
+                                                        "src":"captivate.html",
+                                                        "title":"title text"
+                                                    },
+                                                    "button": {
+                                                        "open": "Open"
+                                                    }                                             
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+					]
+                }
+            ]
+        }
+    ]
+}
+

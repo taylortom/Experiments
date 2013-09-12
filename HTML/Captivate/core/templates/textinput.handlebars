@@ -1,0 +1,71 @@
+<div class="inner">
+    {{#if title}}
+    <div class="title">
+        <h4 class="inner">
+            {{{title}}}
+        </h4>
+    </div>
+    <div class="body">
+        <p class="inner">
+            {{{body}}}
+        </p>
+    </div>
+<div class="widget">    
+    <div class="items">
+        <div class="inner">
+            {{#each items}}
+            <div class="item-{{@index}} clearfix">
+                {{#if prefix}}
+                <label class="prefix"><p>{{{prefix}}}</p></label>
+                {{/if}}
+                <input type="text" placeholder="{{../placeholder}}" class="textbox" data-id="input-{{@index}}" value="">
+                {{#if suffix}}
+                <label class="suffix"><p>{{{suffix}}}</p></label>
+                {{/if}}
+                <div class="state icon"></div>
+            </div>
+            {{/each}}
+        </div>
+    </div>    
+   
+    <div class="buttons">
+         <a href="#" class="button submit">
+            <h6>
+                {{#if button.submit}}    
+                    {{{button.submit}}} 
+                {{else}}
+                    Submit
+                {{/if}}
+            </h6>
+        </a>
+        <a href="#" class="button model">
+            <h6>
+                {{#if button.model}}    
+                    {{{button.model}}} 
+                {{else}}
+                    Model Answer
+                {{/if}}
+            </h6>
+        </a>
+        <a href="#" class="button mine">
+            <h6>
+                {{#if button.mine}}    
+                    {{{button.mine}}} 
+                {{else}}
+                    My Answer
+                {{/if}}
+            </h6>
+        </a>
+        <a href="#" class="button reset">
+            <h6>
+                {{#if button.reset}}    
+                    {{{button.reset}}} 
+                {{else}}
+                    Reset
+                {{/if}}
+            </h6>
+        </a>    
+    </div>
+</div>     
+    {{/if}}
+</div>

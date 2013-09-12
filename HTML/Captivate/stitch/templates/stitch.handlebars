@@ -1,0 +1,768 @@
+
+    <div class="icon stitch open">
+        
+    </div>
+    <div class="inner">
+        <div class="stitch-global expand">
+            <div class="icon plus"></div>
+            <div class="title">Global</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Body Background Colour</div>
+                    <input type="input" class="body-background-color color" value="{{bodyBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Font Family</div>
+                    <select class="main-font-family">
+                        <option value="georgia">Georgia, serif</option>
+                        <option value="palatino">Palatino, Book Antiqua, Palatino, serif</option>
+                        <option value="times">Times New Roman, Times, serif</option>
+                        <option value="arial">Arial, Helvetica, sans-serif</option>
+                        <option value="arialBlack">Arial Black, Gadget, sans-serif</option>
+                        <option value="comicSans">Comic Sans, cursive, sans-serif</option>
+                        <option value="impact">Impact, Charcoal, sans-serif</option>
+                        <option value="lucida">Lucida Sans, Lucida Grande, sans-serif</option>
+                        <option value="tahoma">Tahoma, Geneva, sans-serif</option>
+                        <option value="trebuchet">Trebuchet MS, Helvetica, sans-serif</option>
+                        <option value="verdana">Verdana, Geneva, sans-serif</option>
+                        <option value="courier">Courier New, Courier, monospace</option>
+                        <option value="lucidaConsole">Lucida Console, Monaco, monospace</option>
+                        <option value="bespokeFont">I would like to use a bespoke font please</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <div class="title">Body Text Size</div>
+                    <input type="number" class="main-text-size" value="{{parseInt mainTextSize}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Body Text Colour</div>
+                    <input type="text" class="main-text-color color" value="{{pColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Link/Icon Colour</div>
+                    <input type="text" class="link-icon-color color" value="{{linkIconColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Link/Icon Hover Colour</div>
+                    <input type="text" class="link-icon-hover-color color" value="{{linkIconHoverColor}}" maxlength="6"/>
+                </div>
+            </div>
+        </div>
+        <div class="stitch-tutor expand">
+            <div class="icon plus"></div>
+            <div class="title">Tutor</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Background Colour</div>
+                    <input type="text" class="tutor-background-color color" value="{{tutorBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Text Size</div>
+                    <input type="number" class="tutor-title-text-size" value="{{parseInt tutorTitleTextSize}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Body Text Size</div>
+                    <input type="number" class="tutor-body-text-size" value="{{parseInt tutorBodyTextSize}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Text Colour</div>
+                    <input type="text" class="tutor-text-color color" value="{{tutorTextColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Icon Colour</div>
+                    <input type="text" class="tutor-icon-color color" value="{{tutorIconColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Icon Hover Colour</div>
+                    <input type="text" class="tutor-icon-hover-color color" value="{{tutorIconHoverColor}}" maxlength="6"/>
+                </div>
+            </div>
+        </div>
+        <div class="stitch-guide expand">
+            <div class="icon plus"></div>
+            <div class="title">Guide</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Background Colour</div>
+                    <input type="text" class="guide-background-color color" value="{{guideBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Text Size</div>
+                    <input type="number" class="guide-title-text-size" value="{{parseInt guideTitleTextSize}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Body Text Size</div>
+                    <input type="number" class="guide-body-text-size" value="{{parseInt guideBodyTextSize}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Text Colour</div>
+                    <input type="text" class="guide-text-color color" value="{{guideTextColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Icon Colour</div>
+                    <input type="text" class="guide-icon-color color" value="{{guideIconColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Icon Hover Colour</div>
+                    <input type="text" class="guide-icon-hover-color color" value="{{guideIconHoverColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Footer Background Colour</div>
+                    <input type="text" class="guide-footer-background-color color" value="{{guideFooterBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Footer Progress Colour</div>
+                    <input type="text" class="guide-footer-progress-color color" value="{{guideFooterProgressColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Footer Progress Selected Colour</div>
+                    <input type="text" class="guide-footer-progress-selected-color color" value="{{guideFooterProgressSelectedColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Button Background Colour</div>
+                    <input type="text" class="guide-button-background-color color" value="{{guideButtonBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Button Background Hover Colour</div>
+                    <input type="text" class="guide-button-background-hover-color color" value="{{guideButtonBackgroundHoverColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Button Text Colour</div>
+                    <input type="text" class="guide-button-text-color color" value="{{guideButtonTextColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Button Text Hover Colour</div>
+                    <input type="text" class="guide-button-text-hover-color color" value="{{guideButtonTextHoverColor}}" maxlength="6"/>
+                </div>
+            </div>
+        </div>
+        <div class="stitch-messages expand">
+            <div class="icon plus"></div>
+            <div class="title">Messages</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Toolbar Background Colour</div>
+                    <input type="text" class="messages-toolbar-background-color color" value="{{messagesToolbarBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Toolbar Text Colour</div>
+                    <input type="text" class="messages-toolbar-text-color color" value="{{messagesToolbarTextColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Toolbar Icon Colour</div>
+                    <input type="text" class="messages-toolbar-icon-color color" value="{{messagesToolbarIconColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Toolbar Icon Hover Colour</div>
+                    <input type="text" class="messages-toolbar-icon-hover-color color" value="{{messagesToolbarIconHoverColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Divide Background Colour</div>
+                    <input type="text" class="messages-divide-background-color color" value="{{messagesDivideBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Divide Text Colour</div>
+                    <input type="text" class="messages-divide-text-color color" value="{{messagesDivideTextColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Message Background Colour</div>
+                    <input type="text" class="messages-message-background-color color" value="{{messagesMessageBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Message Text Colour</div>
+                    <input type="text" class="messages-message-text-color color" value="{{messagesMessageTextColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Message Unread Background Colour</div>
+                    <input type="text" class="messages-message-unread-background-color color" value="{{messagesMessageUnreadBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Message Unread Text Colour</div>
+                    <input type="text" class="messages-message-unread-text-color color" value="{{messagesMessageUnreadTextColor}}" maxlength="6"/>
+                </div>
+            </div>
+        </div>
+        <div class="stitch-nav expand">
+            <div class="icon plus"></div>
+            <div class="title">Nav</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Background Colour</div>
+                    <input type="text" class="nav-background-color color" value="{{navBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Bottom Border Colour</div>
+                    <input type="text" class="nav-border-color color" value="{{navBorderColor}}" maxlength="6"/>
+                </div>
+            </div>
+        </div>
+        <div class="stitch-page expand">
+            <div class="icon plus"></div>
+            <div class="title">Page</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Background Colour</div>
+                    <input type="text" class="page-background-color color" value="{{pageBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Padding: Top</div>
+                    <input type="number" class="page-padding-top" value="{{parseInt pagePaddingTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Padding: Right</div>
+                    <input type="number" class="page-padding-right" value="{{parseInt pagePaddingRight}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Padding: Bottom</div>
+                    <input type="number" class="page-padding-bottom" value="{{parseInt pagePaddingBottom}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Padding: Left</div>
+                    <input type="number" class="page-padding-left" value="{{parseInt pagePaddingLeft}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Colour</div>
+                    <input type="text" class="page-title-color color" value="{{pageTitleColor}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Size</div>
+                    <input type="number" class="page-title-size" value="{{parseInt pageTitleSize}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Padding: Top</div>
+                    <input type="number" class="page-title-padding-top" value="{{parseInt pageTitlePaddingTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Padding: Right</div>
+                    <input type="number" class="page-title-padding-right" value="{{parseInt pageTitlePaddingRight}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Padding: Bottom</div>
+                    <input type="number" class="page-title-padding-bottom" value="{{parseInt pageTitlePaddingBottom}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Padding: Left</div>
+                    <input type="number" class="page-title-padding-left" value="{{parseInt pageTitlePaddingLeft}}" min="0"/>
+                </div>
+            </div>
+        </div>
+        <div class="stitch-article expand">
+            <div class="icon plus"></div>
+            <div class="title">Article</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Background Colour</div>
+                    <input type="text" class="article-background-color color" value="{{articleBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Padding: Top</div>
+                    <input type="number" class="article-padding-top" value="{{parseInt articlePaddingTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Padding: Right</div>
+                    <input type="number" class="article-padding-right" value="{{parseInt articlePaddingRight}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Padding: Bottom</div>
+                    <input type="number" class="article-padding-bottom" value="{{parseInt articlePaddingBottom}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Padding: Left</div>
+                    <input type="number" class="article-padding-left" value="{{parseInt articlePaddingLeft}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Margin: Top</div>
+                    <input type="number" class="article-margin-top" value="{{parseInt articleMarginTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Colour</div>
+                    <input type="text" class="article-title-color color" value="{{articleTitleColor}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Size</div>
+                    <input type="number" class="article-title-size" value="{{parseInt articleTitleSize}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Padding: Top</div>
+                    <input type="number" class="article-title-padding-top" value="{{parseInt articleTitlePaddingTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Padding: Right</div>
+                    <input type="number" class="article-title-padding-right" value="{{parseInt articleTitlePaddingRight}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Padding: Bottom</div>
+                    <input type="number" class="article-title-padding-bottom" value="{{parseInt articleTitlePaddingBottom}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Padding: Left</div>
+                    <input type="number" class="article-title-padding-left" value="{{parseInt articleTitlePaddingLeft}}" min="0"/>
+                </div>
+            </div>
+        </div>
+        <div class="stitch-block expand">
+            <div class="icon plus"></div>
+            <div class="title">Block</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Background Colour</div>
+                    <input type="text" class="block-background-color color" value="{{blockBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Padding: Top</div>
+                    <input type="number" class="block-padding-top" value="{{parseInt blockPaddingTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Padding: Right</div>
+                    <input type="number" class="block-padding-right" value="{{parseInt blockPaddingRight}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Padding: Bottom</div>
+                    <input type="number" class="block-padding-bottom" value="{{parseInt blockPaddingBottom}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Padding: Left</div>
+                    <input type="number" class="block-padding-left" value="{{parseInt blockPaddingLeft}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Margin: Top</div>
+                    <input type="number" class="block-margin-top" value="{{parseInt blockMarginTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Colour</div>
+                    <input type="text" class="block-title-color color" value="{{parseInt blockTitleColor}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Size</div>
+                    <input type="number" class="block-title-size" value="{{parseInt blockTitleSize}}" min="0"/>
+                </div>                    
+                <div class="item">
+                    <div class="title">Title Padding: Top</div>
+                    <input type="number" class="block-title-padding-top" value="{{parseInt blockTitlePaddingTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Padding: Right</div>
+                    <input type="number" class="block-title-padding-right" value="{{parseInt blockTitlePaddingTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Padding: Bottom</div>
+                    <input type="number" class="block-title-padding-bottom" value="{{parseInt blockTitlePaddingTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Padding: Left</div>
+                    <input type="number" class="block-title-padding-left" value="{{parseInt blockTitlePaddingTop}}" min="0"/>
+                </div>
+            </div>
+        </div>
+        <div class="stitch-component expand">
+            <div class="icon plus"></div>
+            <div class="title">Component</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Background Colour</div>
+                    <input type="text" class="component-background-color color" value="{{componentBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Margin: Top</div>
+                    <input type="number" class="component-margin-top" value="{{parseInt componentMarginTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Size</div>
+                    <input type="number" class="component-title-size" value="{{parseInt componentTitleSize}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Colour</div>
+                    <input type="text" class="component-title-color color" value="{{componentTitleColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Smart Component Spacing</div>
+                    <input type="number" class="smart-component-spacing" value="{{parseInt smartComponentSpacing}}" min="0"/>
+                </div>
+            </div>
+        </div>
+        <div class="stitch-text expand">
+            <div class="icon plus"></div>
+            <div class="title">Text Component</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Margin: Top</div>
+                    <input type="number" class="text-margin-top" value="{{parseInt textMarginTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Size</div>
+                    <input type="number" class="text-title-size" value="{{parseInt textTitleSize}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Colour</div>
+                    <input type="text" class="text-title-color color" value="{{textTitleColor}}" maxlength="6"/>
+                </div>
+            </div>
+        </div>
+        <div class="stitch-graphic expand">
+            <div class="icon plus"></div>
+            <div class="title">Graphic Component</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Margin: Top</div>
+                    <input type="number" class="graphic-margin-top" value="{{parseInt graphicMarginTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Size</div>
+                    <input type="number" class="graphic-title-size" value="{{parseInt graphicTitleSize}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Colour</div>
+                    <input type="text" class="graphic-title-color color" value="{{graphicTitleColor}}" maxlength="6"/>
+                </div>
+            </div>
+        </div>
+        <div class="stitch-media expand">
+            <div class="icon plus"></div>
+            <div class="title">Media Component</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Margin: Top</div>
+                    <input type="number" class="media-margin-top" value="{{parseInt mediaMarginTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Size</div>
+                    <input type="number" class="media-title-size" value="{{parseInt mediaTitleSize}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Colour</div>
+                    <input type="text" class="media-title-color color" value="{{mediaTitleColor}}" maxlength="6"/>
+                </div>
+            </div>
+        </div>
+        <div class="stitch-narrative expand">
+            <div class="icon plus"></div>
+            <div class="title">Narrative Component</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Margin: Top</div>
+                    <input type="number" class="narrative-margin-top" value="{{parseInt narrativeMarginTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Size</div>
+                    <input type="number" class="narrative-title-size" value="{{parseInt narrativeTitleSize}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Colour</div>
+                    <input type="text" class="narrative-title-color color" value="{{narrativeTitleColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Controls Colour</div>
+                    <input type="text" class="narrative-controls-color color" value="{{narrativeControlsColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Controls Icon Colour</div>
+                    <input type="text" class="narrative-controls-icon-color color" value="{{narrativeControlsIconColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Controls Icon Hover Colour</div>
+                    <input type="text" class="narrative-controls-icon-hover-color color" value="{{narrativeControlsIconHoverColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Mobile Icon Colour</div>
+                    <input type="text" class="narrative-mobile-icon-color color" value="{{narrativeMobileIconColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Mobile Icon Hover Colour</div>
+                    <input type="text" class="narrative-mobile-icon-hover-color color" value="{{narrativeMobileIconHoverColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Strapline Background Colour</div>
+                    <input type="text" class="narrative-strapline-background-color color" value="{{narrativeStraplineBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Strapline Text Colour</div>
+                    <input type="text" class="narrative-strapline-text-color color" value="{{narrativeStraplineTextColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Popup Background Colour</div>
+                    <input type="text" class="narrative-popup-background-color color" value="{{narrativePopupBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Popup Text Colour</div>
+                    <input type="text" class="narrative-popup-text-color color" value="{{narrativePopupTextColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Popup Icon Colour</div>
+                    <input type="text" class="narrative-popup-icon-color color" value="{{narrativePopupIconColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Popup Icon Hover Colour</div>
+                    <input type="text" class="narrative-popup-icon-hover-color color" value="{{narrativePopupIconHoverColor}}" maxlength="6"/>
+                </div>
+            </div>
+        </div>
+        <div class="stitch-hotGraphic expand">
+            <div class="icon plus"></div>
+            <div class="title">Hot Graphic Component</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Margin: Top</div>
+                    <input type="number" class="hotGraphic-margin-top" value="{{parseInt hotGraphicMarginTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Size</div>
+                    <input type="number" class="hotGraphic-title-size" value="{{parseInt hotGraphicTitleSize}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Colour</div>
+                    <input type="text" class="hotGraphic-title-color color" value="{{hotGraphicTitleColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Pin Colour</div>
+                    <input type="text" class="hotGraphic-pin-color color" value="{{hotGraphicPinColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Pin Hover Colour</div>
+                    <input type="text" class="hotGraphic-pin-hover-color color" value="{{hotGraphicPinHoverColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Pin Size</div>
+                    <input type="number" class="hotGraphic-pin-size" value="{{parseInt hotGraphicPinSize}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Popup Border Color</div>
+                    <input type="text" class="hotGraphic-popup-border-color color" value="{{hotGraphicPopupBorderColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Popup Background Color</div>
+                    <input type="text" class="hotGraphic-popup-background-color color" value="{{hotGraphicPopupBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Popup Toolbar Background Color</div>
+                    <input type="text" class="hotGraphic-popup-toolbar-background-color color" value="{{hotGraphicPopupToolbarBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Popup Toolbar Text Color</div>
+                    <input type="text" class="hotGraphic-popup-toolbar-text-color color" value="{{hotGraphicPopupToolbarTextColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Popup Toolbar Icon Color</div>
+                    <input type="text" class="hotGraphic-popup-toolbar-icon-color color" value="{{hotGraphicPopupToolbarIconColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Popup Toolbar Icon Hover Color</div>
+                    <input type="text" class="hotGraphic-popup-toolbar-icon-hover-color color" value="{{hotGraphicPopupToolbarIconHoverColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Popup Text Color</div>
+                    <input type="text" class="hotGraphic-popup-text-color color" value="{{hotGraphicPopupTextColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Popup Padding</div>
+                    <input type="number" class="hotGraphic-popup-padding" value="{{parseInt hotGraphicPopupPadding}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Popup Spacing</div>
+                    <input type="number" class="hotGraphic-popup-spacing" value="{{parseInt hotGraphicPopupSpacing}}" min="0"/>
+                </div>
+            </div>
+        </div>
+        <div class="stitch-accordion expand">
+            <div class="icon plus"></div>
+            <div class="title">Accordion Component</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Margin: Top</div>
+                    <input type="number" class="accordion-margin-top" value="{{parseInt accordionMarginTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Size</div>
+                    <input type="number" class="accordion-title-size" value="{{parseInt accordionTitleSize}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Colour</div>
+                    <input type="text" class="accordion-title-color color" value="{{accordionTitleColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Icon Colour</div>
+                    <input type="text" class="accordion-icon-color color" value="{{accordionIconColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Icon Hover Colour</div>
+                    <input type="text" class="accordion-icon-hover-color color" value="{{accordionIconHoverColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Icon Visited Colour</div>
+                    <input type="text" class="accordion-icon-visited-color color" value="{{accordionIconVisitedColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Title Background Colour</div>
+                    <input type="text" class="accordion-item-background-color color" value="{{accordionItemBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Title Hover Colour</div>
+                    <input type="text" class="accordion-item-hover-background-color color" value="{{accordionItemHoverBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Title Visited Colour</div>
+                    <input type="text" class="accordion-item-visited-background-color color" value="{{accordionItemVisitedBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Title Text Colour</div>
+                    <input type="text" class="accordion-item-title-text-color color" value="{{accordionItemTitleTextColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Title Text Hover Colour</div>
+                    <input type="text" class="accordion-item-title-text-hover-color color" value="{{accordionItemTitleTextHoverColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Title Text Visited Colour</div>
+                    <input type="text" class="accordion-item-title-text-visited-color color" value="{{accordionItemTitleTextVisitedColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Border Colour</div>
+                    <input type="text" class="accordion-item-border-color color" value="{{accordionItemBorderColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Body Background Colour</div>
+                    <input type="text" class="accordion-item-body-background-color color" value="{{accordionItemBodyBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Body Text Colour</div>
+                    <input type="text" class="accordion-item-body-text-color color" value="{{accordionItemBodyTextColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Body Padding</div>
+                    <input type="number" class="accordion-item-body-padding" value="{{parseInt accordionItemBodyPadding}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Spacing</div>
+                    <input type="number" class="accordion-item-spacing" value="{{parseInt accordionItemSpacing}}" min="0"/>
+                </div>
+            </div>
+        </div>
+        <div class="stitch-mcq expand">
+            <div class="icon plus"></div>
+            <div class="title">MCQ Component</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Margin: Top</div>
+                    <input type="number" class="mcq-margin-top" value="{{parseInt mcqMarginTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Size</div>
+                    <input type="number" class="mcq-title-size" value="{{parseInt mcqTitleSize}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Colour</div>
+                    <input type="text" class="mcq-title-color color" value="{{mcqTitleColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Icon Colour</div>
+                    <input type="text" class="mcq-icon-color color" value="{{mcqIconColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Icon Hover Colour</div>
+                    <input type="text" class="mcq-icon-hover-color color" value="{{mcqIconHoverColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Icon Selected Colour</div>
+                    <input type="text" class="mcq-icon-selected-color color" value="{{mcqIconSelectedColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Correct Icon Colour</div>
+                    <input type="text" class="mcq-correct-icon-color color" value="{{mcqCorrectIconColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Incorrect Icon Colour</div>
+                    <input type="text" class="mcq-incorrect-icon-color color" value="{{mcqIncorrectIconColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Background Colour</div>
+                    <input type="text" class="mcq-item-background-color color" value="{{mcqItemBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Background Hover Colour</div>
+                    <input type="text" class="mcq-item-background-hover-color color" value="{{mcqItemBackgroundHoverColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Background Selected Colour</div>
+                    <input type="text" class="mcq-item-background-selected-color color" value="{{mcqItemBackgroundSelectedColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Text Colour</div>
+                    <input type="text" class="mcq-item-text-color color" value="{{mcqItemTextColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Text Hover Colour</div>
+                    <input type="text" class="mcq-item-text-hover-color color" value="{{mcqItemTextHoverColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Item Text Selected Colour</div>
+                    <input type="text" class="mcq-item-text-selected-color color" value="{{mcqItemTextSelectedColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Button Background Colour</div>
+                    <input type="text" class="mcq-button-background-color color" value="{{mcqButtonBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Button Background Hover Colour</div>
+                    <input type="text" class="mcq-button-background-hover-color color" value="{{mcqButtonBackgroundHoverColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Button Text Colour</div>
+                    <input type="text" class="mcq-button-text-color color" value="{{mcqButtonTextColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Button Text Hover Colour</div>
+                    <input type="text" class="mcq-button-text-hover-color color" value="{{mcqButtonTextHoverColor}}" maxlength="6"/>
+                </div>
+            </div>
+        </div>
+        <div class="stitch-ppq expand">
+            <div class="icon plus"></div>
+            <div class="title">PPQ Component</div>
+            <div class="collapse">
+                <div class="item">
+                    <div class="title">Margin: Top</div>
+                    <input type="number" class="ppq-margin-top" value="{{parseInt ppqMarginTop}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Size</div>
+                    <input type="number" class="ppq-title-size" value="{{parseInt ppqTitleSize}}" min="0"/>
+                </div>
+                <div class="item">
+                    <div class="title">Title Colour</div>
+                    <input type="text" class="ppq-title-color color" value="{{ppqTitleColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Pin Colour</div>
+                    <input type="text" class="ppq-pin-color color" value="{{ppqPinColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Pin Hover Colour</div>
+                    <input type="text" class="ppq-pin-hover-color color" value="{{ppqPinHoverColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Pin Correct Colour</div>
+                    <input type="text" class="ppq-pin-correct-color color" value="{{ppqPinCorrectColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Pin Incorrect Colour</div>
+                    <input type="text" class="ppq-pin-incorrect-color color" value="{{ppqPinIncorrectColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Button Background Colour</div>
+                    <input type="text" class="ppq-button-background-color color" value="{{ppqButtonBackgroundColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Button Background Hover Colour</div>
+                    <input type="text" class="ppq-button-background-hover-color color" value="{{ppqButtonBackgroundHoverColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Button Text Colour</div>
+                    <input type="text" class="ppq-button-text-color color" value="{{ppqButtonTextColor}}" maxlength="6"/>
+                </div>
+                <div class="item">
+                    <div class="title">Button Text Hover Colour</div>
+                    <input type="text" class="ppq-button-text-hover-color color" value="{{ppqButtonTextHoverColor}}" maxlength="6"/>
+                </div>
+            </div>
+        </div>
+        <!--<a href="#" class="save">SAVE</a>-->
+    </div>

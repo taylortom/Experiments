@@ -1,0 +1,21 @@
+.component.triggered {
+    visibility: hidden;
+    background-color:beige;
+    position:relative;
+    z-index:2;
+}
+.component.triggered > .inner {
+    padding:10px;
+}
+.triggered-done {
+    float:right;
+    cursor:pointer;
+}
+.trigger-button {
+    position:absolute;
+    color:#e60;
+    cursor:pointer;
+}
+.trigger-button:hover {
+    color:#6e0;
+}

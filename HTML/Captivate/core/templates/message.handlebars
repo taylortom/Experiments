@@ -1,0 +1,46 @@
+<div class="preview inner {{#unless read}}unread-message{{/unless}}{{#if star}}starred{{/if}}">
+        <a href="#" class="open-message">
+            <div class="icon plus"></div>
+        </a>
+        <div class="title">
+            <h6 class="inner">{{preview title}}</h6>
+        </div>
+        <div class="body teaser">
+            <p class="inner">{{preview body}}</p>
+        </div>
+    </div>
+    <div class="pop-out">
+        <div class="inner">
+            <div class="pin"></div>
+            <div class="toolbar">
+                <div class="title">
+                    <h6 class="inner">{{title}}</h6>
+                </div>
+                <a href="#" class="pop-out-done">
+                    <div class="icon close"></div>
+                </a>
+            </div>
+            <div class="body">
+                <p class="inner">{{body}}</p>
+                {{#if image.src}}
+                <img src="{{image.src}}" alt="{{image.alt}}" title="{{image.title}}"/>
+                {{else}}
+                {{#if video.mp4}}
+                <video controls>
+                    <source src="{{video.mp4}}"  type="video/mp4" />
+                    <source src="{{video.ogv}}"  type="video/ogg" />
+                    <object type="application/x-shockwave-flash" data="player.swf">
+                        <param name="movie" value="player.swf" />
+                        <param name="flashvars" value="controlbar=over&amp;image=__POSTER__.JPG&amp;file={{video.mp4}}" />
+                    </object>
+                </video>
+                <div class="transcript">
+                    <p>
+                        {{video.transcript}}
+                    </p>
+                </div>
+                {{/if}}
+                {{/if}}
+            </div>
+        </div>
+    </div> 

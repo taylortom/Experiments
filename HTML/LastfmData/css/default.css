@@ -1,0 +1,49 @@
+body
+{
+	background-color: #dadada;
+	font-family: 'Donegal One', serif;
+	font-size: small;
+	text-shadow: 1px 1px 0px #d4d4d4;;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header
+{
+	padding-left: 20px;
+	padding-top: 30px;
+}
+
+#content
+{
+	background-color: white;
+	border-color: #a9a9a9;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	padding: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px; 
+	box-shadow: 3px 3px 5px 1px #a7a6a6;
+	overflow: hidden;
+}
+
+#footer
+{
+	text-align: right;
+	padding-right: 10px;
+	margin-bottom: 65px;
+}
+
+div.leftColumn
+{
+    float: left;
+    width: 47%;
+}
+
+div.rightColumn
+{
+    float: right;
+    width: 47%;
+}

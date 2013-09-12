@@ -1,0 +1,62 @@
+<div class="inner">
+    {{#if title}}
+        <div class="title">
+            <h4>{{{title}}}</h4>
+        </div>
+    {{/if}}
+    {{#if body}}
+        <div class="body">
+            <p>{{{body}}}</p>
+        </div>
+    {{/if}}
+    <div class="widget">
+        
+        <div class="holder clearfix">
+            
+            <div class="scale-labels">
+                <div class="scale-start">{{labelstart}}</div>
+                <div class="scale-end">{{labelend}}</div>
+            </div>
+            <div class="scaler">
+                <div class="modelranges"></div>
+                <div class="markers"></div>
+                <div class="onemodel answer"></div>
+                <div class="scale marker"></div>
+            </div>
+                
+            <div class="background">
+                <div class="slider">
+                    <a href="#" class="slider handle"></a>
+                    <div class="bar"></div>
+                </div>
+                <div class="outer-bar"></div>
+            </div>
+        </div>
+        <div class="result"></div>
+        <div class="data">
+            
+        </div>
+        <div class="buttons">
+        <a href="#" class="button submit">
+            <h6>
+            {{button.submit}}
+            </h6>
+        </a>
+        <a href="#" class="button reset">
+            <h6>
+            {{button.reset}}
+            </h6>
+        </a>
+        <a href="#" class="button model">
+            <h6>
+            {{button.model}}
+            </h6>
+        </a>
+        <a href="#" class="button mine">
+            <h6>
+            {{button.mine}}
+            </h6>
+        </a> 
+        </div>
+    </div>
+</div>

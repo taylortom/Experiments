@@ -1,0 +1,11 @@
+{
+    "tracking": {
+        "requireAllModulesCompleted": false,
+        "requireQuizPassed": false
+    },
+    "reporting": {
+        "comment": "Your options here are 'completed', 'passed', 'failed', and 'incomplete'",
+        "onTrackingCriteriaMet": "completed",
+        "onQuizFailure": "incomplete"
+    }
+}

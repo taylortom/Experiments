@@ -1,0 +1,23 @@
+<div class="inner clearfix">
+    {{#if title}}
+    <div class="title">
+        <h3 class="inner">
+            <span class="blockTitle">{{{title}}}</span><span class="componentTitle"></span>
+        </h3>
+    </div>
+    {{/if}}
+    {{#if body}}
+    <div class="body">
+        <p class="inner">
+            {{{body}}}
+        </p>
+    </div>
+    {{/if}}
+        {{#each components}}
+            {{#if triggered}}
+                <a class="trigger-button trigger-{{@index}}" style="position:absolute; top:{{triggerPos.top}}%; left:{{triggerPos.left}}%;">
+                    <div class="icon"> Trigger </div>
+                </a>
+            {{/if}}
+        {{/each}}
+</div>

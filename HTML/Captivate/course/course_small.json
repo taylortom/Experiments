@@ -1,0 +1,94 @@
+{
+    "title":"Adapt",
+    "version":"3.1.4",
+    "navigation":{
+        "settings":true,
+        "search":true,
+        "accessibility":true,
+        "resources":true   
+    },
+    "guide":{
+        "buttons":{
+            "core":"core button text",
+            "components":"component button text"
+        },
+        "items":[ ]
+    },
+    "modules":[
+        {
+            "id":"m05",
+            "title":"Standard Functionality",
+            "body":"The module description sits here.",
+            "graphic":{
+                "src":"course/assets/m05/t05/p101/menu-5.jpg",
+                "alt":"alt text",
+                "title":"title text"
+            },
+            "topics":[
+				{
+                    "id":"m05-t10",
+                    "title":"Full Width Components",
+                    "body":"The topic description sits here.",
+                    "graphic":{
+                        "src":"course/assets/m05/t05/p101/menu-5.jpg",
+                        "alt":"alt text",
+                        "title":"title text"
+                    },
+                    "pages":[
+                        {
+                            "id":"m05-t10-p10",
+                            "class":"",
+                            "title":"Additional Width Components",
+                            "body":"Find out about the two presentation components.",
+                            "graphic":{
+                                "src":"course/assets/m05/t05/p101/menu-5.jpg",
+                                "alt":"alt text",
+                                "title":"title text"
+                            },
+                            "articles":[
+                                {
+                                    "id":"m05-t10-p10-a05",
+                                    "class":"",
+                                    "title":"Article 1",
+                                    "assessment":false,
+                                    "mobile-hidden":true,
+                                    "blockSlider":{
+                                        "active":false,
+                                        "height":600,
+                                        "tabs":true,
+                                        "indicators":true,
+                                        "direction":"both",
+                                        "initial":3
+                                    },
+                                    "blocks":[
+										{
+                                            "id":"m05-t10-p10-a05-b10",
+                                            "class":"",
+                                            "title":"Block title 2",
+                                            "components":[
+												{
+                                                    "id":"m05-t10-p10-a05-b10-c05",
+                                                    "class":"",
+                                                    "layout":"full",
+                                                    "component":"captivate",
+                                                    "title":"Captivate Container",
+                                                    "body":"This is optional body text.",
+                                                    "graphic":{
+                                                        "src":"course/assets/m05/t05/p101/graphic_fullwidth.jpg",
+                                                        "alt":"alt text",
+                                                        "title":"title text"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+					]
+                }
+            ]
+        }
+    ]
+}
+

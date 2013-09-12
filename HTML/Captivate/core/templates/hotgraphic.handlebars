@@ -1,0 +1,64 @@
+<div class="inner">
+    {{#if title}}
+    <div class="title">
+        <h4 class="inner">
+            {{{title}}}
+        </h4>
+    </div>
+    {{/if}}
+    {{#if body}}
+    <div class="body">
+        <p class="inner">
+            {{{body}}}
+        </p>
+    </div>
+    {{/if}}
+    <div class="widget ">
+        <div class="graphic">
+            <div class="popup">
+                <div class="toolbar clearfix">
+                    <div class="nav">
+                        <a href="#" class="back controls" title="back" alt="back">
+                            <div class="icon arrow-l"></div>
+                        </a>
+                        <div class="count">
+                            <span class="current">1</span>/<span class="total">3</span>
+                        </div>
+                        <a href="#" class="next controls" title="next" alt="next">
+                            <div class="icon arrow-r"></div>
+                        </a>
+                    </div>
+                    <a href="#" class="done" alt="done" title="done"><div class="icon close"></div></a> 
+                </div>
+                <div class="inner clearfix">
+                    {{#each items}}
+                    <div class="content item-{{@index}}">
+                        <div class="graphic">
+                            <div class="inner">
+                                <img src="{{graphic.src}}" alt="{{graphic.alt}}" title="{{{graphic.title}}}"/>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <div class="inner">
+                                <h5>
+                                    {{{title}}}
+                                </h5>
+                                <p>
+                                    {{{body}}}  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+            <img src="{{graphic.src}}" alt="{{graphic.alt}}" title="{{{graphic.title}}}"/>
+            {{#each items}}
+            <a href="#" class="item" data-id="item-{{@index}}" style="top:{{{top}}}%; left:{{{left}}}%;" title="{{graphicTitle}}">
+                <div class="inner icon pin">
+                </div>
+            </a>
+            {{/each}}
+        </div>
+    </div>
+</div>

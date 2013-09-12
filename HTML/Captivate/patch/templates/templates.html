@@ -1,0 +1,131 @@
+<!doctype html>
+<head>
+</head>
+<body>
+<script id="patch-template" type="text/x-handlebars-template">
+        <div class="inner">
+            <div class="title">Currently Editing :  {{#unless module}}Body{{/unless}}
+                                                    {{#if module}}{{module}}{{/if}}
+                                                    {{#if topic}}/{{topic}}{{/if}}
+                                                    {{#if page}}/{{page}}{{/if}}
+                                                    {{#if article}}/{{article}}{{/if}}
+                                                    {{#if block}}/{{block}}{{/if}}</div>
+            
+            <div class="item">
+                <div class="title">Background Colour</div>
+                <input type="text" class="patch-background-color color" value="{{backgroundColor}}" maxlength="6"/>
+            </div>
+            <div class="item">
+                <div class="title">Add Background Image</div>
+                <form action="" method="" enctype="multipart/form-data" id="upload-file">
+                    <input type="file" name="file" id="file" class="patch-background-image" value=""><br>
+                    <button class="patch-background-image-save">Upload File</button>
+                </form>
+            </div>
+            {{#if article}}
+            <div class="item">
+                <div class="title">Background Height</div>
+                <input type="number" class="patch-background-height" value=""/>
+            </div>
+            {{/if}}
+            <div class="item">
+                <div class="title">Background Position</div>
+                x: <input type="number" class="patch-background-position-x" value=""/><br>
+                y: <input type="number" class="patch-background-position-y" value=""/>
+            </div>
+            <div class="item">
+                <div class="title">Background Repeat</div>
+                <select class="patch-background-repeat">
+                    <option value="repeat" selected>Repeat</option>
+                    <option value="no-repeat">No-Repeat</option>
+                    <option value="repeat-x">Repeat X</option>
+                    <option value="repeat-y">Repeat Y</option>
+                </select>
+            </div>
+            {{#if body}}
+            <div class="item">
+                <div class="title">Background Attachment</div>
+                <select class="patch-background-attachment">
+                    <option value="scroll" selected>Scroll</option>
+                    <option value="fixed">Fixed</option>
+                </select>
+            </div>
+            {{/if}}
+        </div>
+    </script>
+    <script id="patch-menu-template" type="text/x-handlebars-template">
+        <div class="inner">
+            <div class="item body-background">
+                <div class="inner">
+                    Edit Body Background
+                </div>
+            </div>
+            <div class="item page-background">
+                <div class="inner">
+                    Edit Page Background
+                </div>
+            </div>
+            <div class="item article-background">
+                <div class="inner">
+                    Edit Current Article Background
+                </div>
+            </div>
+            <div class="item block-background">
+                <div class="inner">
+                    Edit Current Block Background
+                </div>
+            </div>
+            <div class="item save-patch last">
+                <div class="inner">
+                    SAVE...
+                </div>
+            </div>
+        </div>
+    </script>
+<script id="patch-results-template" type="text/x-handlebars-template">
+{{#each models}}
+{{#if body}}
+body {
+    {{#if backgroundColor}}
+    background-color:#{{backgroundColor}};
+    {{/if}}
+    {{#if backgroundImage}}
+    background-image:url('css/backgrounds/{{backgroundImage}}');
+    {{/if}}
+    {{#if backgroundPositionX}}
+    background-position:{{backgroundPositionX}} {{backgroundPositionY}};
+    {{/if}}
+    {{#if backgroundRepeat}}
+    background-repeat:{{backgroundRepeat}};
+    {{/if}}
+    {{#if backgroundAttachment}}
+    background-attachment:{{backgroundAttachment}};
+    {{/if}}
+}
+{{else}}
+
+{{#if module}}#{{/if}}{{module}}-{{topic}}-{{page}} {{#if article}}.{{article}}{{/if}} {{#if block}}.{{block}}{{/if}} {
+    {{#if backgroundColor}}
+    background-color:#{{backgroundColor}};
+    {{/if}}
+    {{#if backgroundImage}}
+    background-image:url('css/backgrounds/{{backgroundImage}}');
+    {{/if}}
+    {{#if backgroundHeight}}
+    height:{{backgroundHeight}};
+    {{/if}}
+    {{#if backgroundPositionX}}
+    background-position:{{backgroundPositionX}} {{backgroundPositionY}};
+    {{/if}}
+    {{#if backgroundRepeat}}
+    background-repeat:{{backgroundRepeat}};
+    {{/if}}
+    {{#if backgroundAttachment}}
+    background-attachment:{{backgroundAttachment}};
+    {{/if}}
+}
+{{/if}}
+{{/each}}
+</script>
+</body>
+</html>

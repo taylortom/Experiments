@@ -1,0 +1,93 @@
+/*///////////////////////
+	MENU
+///////////////////////*/
+
+#menu {
+    position:relative;
+    margin-top:40px;
+}
+
+#menu > .inner {
+    padding:10px;
+}
+
+#menu .item {
+    margin-bottom: 10px;
+    background-color:#fff;
+    overflow:hidden;
+}
+
+#menu .item .inner {
+    display:block;
+    padding:10px;
+}
+
+#menu .item .inner .title {
+    color:#4f4f4f;
+}
+
+#menu .status {
+    padding:4px 10px;
+    background-color:#fbfbfb;
+    border-top:solid 1px #b9b9b9;
+}
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+@media all and (min-width:900px) {
+        
+    #menu .item {
+        display: block;
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+        float: left;
+    }
+        
+/*End MediaQ*/
+}
+
+@media all and (max-width:899px) and (min-width:700px) {
+            
+    #menu .item {
+        display: block;
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+        float: left;
+    }
+        
+/*End MediaQ*/		
+}
+
+@media all and (max-width:699px) and (min-width:440px) {
+
+    
+/*End MediaQ*/   
+}
+
+@media all and (max-width: 439px) {
+        
+/*End MediaQ*/		
+}
+
+@media all and (orientation: portrait) {
+		
+		
+/*End MediaQ*/	
+}
+
+@media all and (orientation: landscape) {
+		
+		
+/*End MediaQ*/	
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+		
+		
+/*End MediaQ*/
+}

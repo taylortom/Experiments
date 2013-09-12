@@ -1,0 +1,29 @@
+{{#if navigate}}
+    <a href="#" class="left">
+        <div class="icon arrow-l"></div>
+    </a>
+    <a href="#" class="right">
+        <div class="icon arrow-r"></div>
+    </a>
+    {{/if}}
+    <a href="#" class="done">
+        <div class="icon close"></div>
+    </a>
+    <div class="inner clearfix">
+        <div class="scroll">
+        </div>
+    </div>
+    <a href="#" class="toggle">
+        {{#if adapt}}
+            {{componentBtnText}}
+        {{else}}
+            {{adaptBtnText}}
+        {{/if}}
+    </a>
+    <div class="footer">
+        <div class="indicators">
+            {{#each length}}
+            <div class="progress" tabindex="-1"></div>
+            {{/each}}
+        </div>
+    </div>
