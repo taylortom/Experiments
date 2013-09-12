@@ -9,13 +9,17 @@ class Movie():
          
    def setData(self):
       self.title = self.data['title']
-      #self.releaseDate = self
+      self.releaseDate = self.data['release_dates']['theater']
       self.criticScore = self.data['ratings']['critics_score']
       self.fresh = self.data['ratings']['critics_rating'] == 'Certified Fresh'
          
    def printInfo(self):
       print self.className, "printInfo"
-      #for item in self.data:
-         #print "  ", item
-      print "  ", self.criticScore
-      print "  ", self.fresh
+      print "  title:", self.title
+      print "  released:", self.releaseDate
+      print "  critic score:", self.criticScore
+      print "  fresh:", self.fresh
+      
+   def printAllData(self):
+      for item in self.data:
+         print "  ", item
