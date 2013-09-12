@@ -1,4 +1,4 @@
 from Movie import Movie
 
-movie = Movie("cars")
+movie = Movie("toy story 3")
 movie.printInfo()
